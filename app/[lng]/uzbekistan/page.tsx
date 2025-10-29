@@ -141,22 +141,22 @@ export default async function UzbekistanPage({ params }: PageProps) {
     {
       name: t("tashkent"),
       description: t("tashkentDesc"),
-      image: "/uzbekistan/tashkent.jpg",
+      image: "/tashkent.jpg",
     },
     {
       name: t("samarkand"),
       description: t("samarkandDesc"),
-      image: "/uzbekistan/samarkand.webp",
+      image: "/samarkand.webp",
     },
     {
       name: t("bukhara"),
       description: t("bukharaDesc"),
-      image: "/uzbekistan/bukhara.png",
+      image: "/bukhara.png",
     },
     {
       name: t("khiva"),
       description: t("khivaDesc"),
-      image: "/uzbekistan/khiva.jpg",
+      image: "/khiva.jpg",
     },
   ];
 
