@@ -14,17 +14,9 @@ export const getMenuItems = (
     href: `/${lng}`,
   },
   {
-    title: t("president"),
-    subItems: [
-      { title: t("presidentTitle"), href: `/${lng}/president` },
-      { title: t("news"), href: "https://president.uz/en" },
-    ],
-    width: "280px",
-  },
-  {
     title: t("uzbekistan"),
     subItems: [
-      { title: t("generalInfo"), href: "/page/2537" },
+      { title: t("generalInfo"), href: `/${lng}/uzbekistan` },
       { title: t("parliament"), href: "/page/2539" },
       { title: t("stateSymbols"), href: "/page/2540" },
       { title: t("nationalHolidays"), href: "/page/2542" },
@@ -34,36 +26,10 @@ export const getMenuItems = (
     width: "300px",
   },
   {
-    title: t("investment"),
+    title: t("president"),
     subItems: [
-      {
-        title: t("investInUzbekistan"),
-        href: "https://invest.gov.uz/uzipa/?lang=en",
-      },
-      {
-        title: t("investmentPotential"),
-        href: "https://invest.gov.uz/investor-taxonomy/potential/",
-      },
-      { title: t("investmentCooperation"), href: "/page/2536" },
-    ],
-    width: "320px",
-  },
-  {
-    title: t("relations"),
-    subItems: [
-      { title: t("economicCooperation"), href: "/page/357" },
-      { title: t("politicalRelations"), href: "/page/358" },
-      { title: t("culturalHumanitarianCooperation"), href: "/page/359" },
-    ],
-    width: "280px",
-  },
-  {
-    title: t("embassyMenu"),
-    subItems: [
-      { title: t("ambassador"), href: "/page/360" },
-      { title: t("ambassadorMessage"), href: "/page/361" },
-      { title: t("aboutEmbassy"), href: "/page/362" },
-      { title: t("embassyTeam"), href: "/page/363" },
+      { title: t("presidentTitle"), href: `/${lng}/president` },
+      { title: t("news"), href: "https://president.uz/en" },
     ],
     width: "280px",
   },
@@ -91,8 +57,19 @@ export const getMenuItems = (
     width: "350px",
   },
   {
-    title: t("newsAndAnnouncements"),
-    href: "/news/index",
+    title: t("investment"),
+    subItems: [
+      {
+        title: t("investInUzbekistan"),
+        href: "https://invest.gov.uz/uzipa/?lang=en",
+      },
+      {
+        title: t("investmentPotential"),
+        href: "https://invest.gov.uz/investor-taxonomy/potential/",
+      },
+      { title: t("investmentCooperation"), href: "/page/2536" },
+    ],
+    width: "320px",
   },
   {
     title: t("tourism"),
@@ -103,5 +80,29 @@ export const getMenuItems = (
       },
     ],
     width: "280px",
+  },
+  {
+    title: t("relations"),
+    subItems: [
+      { title: t("economicCooperation"), href: "/page/357" },
+      { title: t("politicalRelations"), href: "/page/358" },
+      { title: t("culturalHumanitarianCooperation"), href: "/page/359" },
+    ],
+    width: "280px",
+  },
+  {
+    title: t("embassyMenu"),
+    subItems: [
+      { title: t("ambassador"), href: "/page/360" },
+      { title: t("ambassadorMessage"), href: "/page/361" },
+      { title: t("aboutEmbassy"), href: "/page/362" },
+      { title: t("embassyTeam"), href: "/page/363" },
+    ],
+    width: "280px",
+  },
+
+  {
+    title: t("newsAndAnnouncements"),
+    href: "/news/index",
   },
 ];

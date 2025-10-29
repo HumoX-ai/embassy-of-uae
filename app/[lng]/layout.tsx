@@ -6,7 +6,6 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { languages, Language, fallbackLng } from "@/i18n/settings";
 
-
 import "../globals.css";
 
 const geistSans = Geist({

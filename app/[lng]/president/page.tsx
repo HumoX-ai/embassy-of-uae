@@ -155,7 +155,7 @@ export default async function PresidentPage({ params }: PageProps) {
   return (
     <div className="min-h-screen">
       {/* Header Section */}
-      <div className="bg-linear-to-r from-primary/10 to-primary/5 py-12 md:py-16">
+      <div className="bg-[url('/bg.svg')] bg-contain bg-center py-12 md:py-16">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">

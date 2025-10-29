@@ -21,7 +21,6 @@ export default function LanguageSwitcher({ lng }: LanguageSwitcherProps) {
   const languageOptions = [
     { code: "en", label: "English" },
     { code: "uz", label: "Oʻzbekcha" },
-    { code: "ru", label: "Русский" },
   ];
 
   const getLocalizedPath = (locale: string) => {

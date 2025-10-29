@@ -168,7 +168,7 @@ export const mockNewsEn: NewsItem[] = [
           <li>Monthly living stipend</li>
           <li>Accommodation in university dormitories</li>
           <li>Health insurance</li>
-          <li>Language courses (Uzbek or Russian)</li>
+          <li>Language courses (Uzbek)</li>
         </ul>
         
         <h2>Priority Fields of Study</h2>
@@ -539,7 +539,7 @@ export const mockNewsUz: NewsItem[] = [
           <li>Oylik yashash stipendiyasi</li>
           <li>Universitet yotoqxonasida turar joy</li>
           <li>Tibbiy sug'urta</li>
-          <li>Til kurslari (o'zbek yoki rus)</li>
+          <li>Til kurslari (o'zbek)</li>
         </ul>
         
         <h2>Ustuvor O'qish Yo'nalishlari</h2>

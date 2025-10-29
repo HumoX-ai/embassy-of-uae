@@ -59,9 +59,8 @@ export default function Header({ lng }: HeaderProps) {
   const menuItems = getMenuItems(lng, t);
 
   const languages = [
-    { code: "en", label: "English" },
     { code: "uz", label: "Oʻzbekcha" },
-    { code: "ru", label: "Русский" },
+    { code: "en", label: "English" },
   ];
 
   return (
@@ -81,7 +80,7 @@ export default function Header({ lng }: HeaderProps) {
             <h1 className="text-sm xl:text-base 2xl:text-lg font-semibold leading-tight">
               {t("embassyTitle")}
             </h1>
-            <p className="text-xs xl:text-sm 2xl:text-base text-muted-foreground">
+            <p className="text-sm xl:text-base 2xl:text-lg font-semibold leading-tight">
               {t("embassySubtitle")}
             </p>
           </div>
