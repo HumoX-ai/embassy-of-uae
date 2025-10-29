@@ -202,25 +202,25 @@ export default async function UzbekistanPage({ params }: PageProps) {
       </section>
 
       {/* Introduction */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-12 text-foreground">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 md:mb-12 text-foreground">
               {t("introTitle")}
             </h2>
             <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-6">
-              <p className="text-xl">{t("introParagraph1")}</p>
-              <p className="text-xl">{t("introParagraph2")}</p>
-              <p className="text-xl">{t("introParagraph3")}</p>
+              <p className="text-lg md:text-xl">{t("introParagraph1")}</p>
+              <p className="text-lg md:text-xl">{t("introParagraph2")}</p>
+              <p className="text-lg md:text-xl">{t("introParagraph3")}</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Features Grid */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-foreground">
             {t("featuresTitle")}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -246,12 +246,12 @@ export default async function UzbekistanPage({ params }: PageProps) {
       </section>
 
       {/* Historic Cities */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-4 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-4 text-foreground">
             {t("citiesTitle")}
           </h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+          <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-2xl mx-auto text-sm md:text-base">
             {t("citiesSubtitle")}
           </p>
 
@@ -284,12 +284,12 @@ export default async function UzbekistanPage({ params }: PageProps) {
       </section>
 
       {/* Economy Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
+      <section className="py-12 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6">
             {t("economyTitle")}
           </h2>
-          <p className="text-center opacity-90 mb-16 max-w-3xl mx-auto text-lg">
+          <p className="text-center opacity-90 mb-12 md:mb-16 max-w-3xl mx-auto text-base md:text-lg">
             {t("economySubtitle")}
           </p>
 
@@ -335,9 +335,9 @@ export default async function UzbekistanPage({ params }: PageProps) {
       </section>
 
       {/* Culture Section */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-16 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-foreground">
             {t("cultureTitle")}
           </h2>
 
@@ -382,12 +382,12 @@ export default async function UzbekistanPage({ params }: PageProps) {
       </section>
 
       {/* Fun Facts Section */}
-      <section className="py-20 bg-background">
+      <section className="py-12 md:py-20 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-6 text-foreground">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 text-foreground">
             {t("funFactsTitle")}
           </h2>
-          <p className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto">
+          <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-2xl mx-auto text-sm md:text-base">
             {t("funFactsSubtitle")}
           </p>
 
