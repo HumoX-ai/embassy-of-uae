@@ -149,12 +149,12 @@ export default async function UzbekistanPage({ params }: PageProps) {
     {
       name: t("samarkand"),
       description: t("samarkandDesc"),
-      image: "/uzbekistan/samarkand.webp",
+      image: "/uzbekistan/samarkand.jpg",
     },
     {
       name: t("bukhara"),
       description: t("bukharaDesc"),
-      image: "/uzbekistan/bukhara.png",
+      image: "/uzbekistan/bukhara.jpg",
     },
     {
       name: t("khiva"),
