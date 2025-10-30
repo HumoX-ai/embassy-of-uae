@@ -27,6 +27,7 @@ export async function generateMetadata({
 }: PageProps): Promise<Metadata> {
   const { lng } = await params;
 
+  // Validate that lng is a supported language
   const validLng = languages.includes(lng as Language)
     ? (lng as Language)
     : fallbackLng;
@@ -55,7 +56,7 @@ export async function generateMetadata({
       locale: validLng === "uz" ? "uz_UZ" : "en_US",
       images: [
         {
-          url: "/uzbekistan/uzbekistan.png",
+          url: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1200px-Flag_of_Uzbekistan.svg.png",
           width: 1200,
           height: 630,
           alt:
@@ -69,7 +70,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: titles[validLng] || titles.en,
       description: descriptions[validLng] || descriptions.en,
-      images: ["/uzbekistan/uzbekistan.png"],
+      images: [
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1200px-Flag_of_Uzbekistan.svg.png",
+      ],
     },
   };
 }

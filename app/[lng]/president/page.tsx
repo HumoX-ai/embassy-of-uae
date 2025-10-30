@@ -68,7 +68,7 @@ export default async function PresidentPage({ params }: PageProps) {
   const presidentContent = {
     en: {
       title: "President of the Republic of Uzbekistan",
-      name: "Shavkat Mirziyoyev",
+      name: "Shavkat Miromonovich Mirziyoyev",
       biography: `
         <p>Shavkat Mirziyoyev was born on July 24, 1957 in Zaamin District of Jizzakh Region to a family of doctors. He is an Uzbek by nationality, with higher education. In 1981 he graduated from the Tashkent Institute of Engineers of Irrigation and Mechanization of Agriculture and earned a degree in mechanical engineering. He holds a Ph.D. in Technical Sciences, Associate Professor.</p>
 
@@ -109,7 +109,7 @@ export default async function PresidentPage({ params }: PageProps) {
     },
     uz: {
       title: "O'zbekiston Respublikasi Prezidenti",
-      name: "Shavkat Mirziyoyev",
+      name: "Shavkat Miromonovich Mirziyoyev",
       biography: `
         <p>Shavkat Mirziyoyev 1957 yil 24 iyulda Jizzax viloyati Zomin tumani shifokorlar oilasida tug'ilgan. Millati o'zbek, oliy ma'lumotli. 1981 yilda Toshkent irrigatsiya va mexanizatsiyalash muhandislari institutini tamomlagan va mexanika muhandisi mutaxassisligi bo'yicha diplom olgan. Texnika fanlari nomzodi, dotsent ilmiy darajasiga ega.</p>
 

@@ -42,7 +42,12 @@ export default function Footer({ lng }: FooterProps) {
             <div className="space-y-3">
               <div className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-primary shrink-0" />
-                <span className="text-sm">{t("telephone")}</span>
+                <Link
+                  href={`tel:${t("telephone")}`}
+                  className="text-sm hover:underline text-primary"
+                >
+                  {t("telephone")}
+                </Link>
               </div>
               <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-primary shrink-0" />
@@ -55,7 +60,30 @@ export default function Footer({ lng }: FooterProps) {
               </div>
               <div className="flex items-start">
                 <MapPin className="w-5 h-5 mr-3 text-primary shrink-0 mt-0.5" />
-                <span className="text-sm">{t("address")}</span>
+                <button
+                  onClick={() => {
+                    const address = "CCV7+MV2 Абу-Даби";
+                    const encodedAddress = encodeURIComponent(address);
+
+                    // Detect device and open appropriate maps app
+                    if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+                      // iOS - open in Apple Maps
+                      window.open(`maps:///?q=${encodedAddress}`, "_blank");
+                    } else if (/Android/.test(navigator.userAgent)) {
+                      // Android - open in Google Maps app
+                      window.open(`geo:0,0?q=${encodedAddress}`, "_blank");
+                    } else {
+                      // Desktop - open in Google Maps web
+                      window.open(
+                        `https://maps.google.com/maps?q=${encodedAddress}`,
+                        "_blank"
+                      );
+                    }
+                  }}
+                  className="text-sm hover:underline hover:cursor-pointer text-primary text-left"
+                >
+                  {t("address")}
+                </button>
               </div>
             </div>
           </div>
