@@ -173,7 +173,7 @@ export default async function UzbekistanPage({ params }: PageProps) {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-[url('/uzbekistan/uzbekistan.png')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('/uzbekistan/uzbekistan.jpg')] bg-cover bg-top"></div>
         <div className="absolute inset-0 bg-black/40 md:bg-black/50"></div>
 
         <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
