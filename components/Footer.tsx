@@ -62,20 +62,23 @@ export default function Footer({ lng }: FooterProps) {
                 <MapPin className="w-5 h-5 mr-3 text-primary shrink-0 mt-0.5" />
                 <button
                   onClick={() => {
-                    const address = "CCV7+MV2 Абу-Даби";
-                    const encodedAddress = encodeURIComponent(address);
+                    const latitude = 24.444151594215267;
+                    const longitude = 54.414643479092746;
 
                     // Detect device and open appropriate maps app
                     if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
                       // iOS - open in Apple Maps
-                      window.open(`maps:///?q=${encodedAddress}`, "_blank");
+                      window.open(
+                        `maps:///?ll=${latitude},${longitude}`,
+                        "_blank"
+                      );
                     } else if (/Android/.test(navigator.userAgent)) {
                       // Android - open in Google Maps app
-                      window.open(`geo:0,0?q=${encodedAddress}`, "_blank");
+                      window.open(`geo:${latitude},${longitude}`, "_blank");
                     } else {
                       // Desktop - open in Google Maps web
                       window.open(
-                        `https://maps.google.com/maps?q=${encodedAddress}`,
+                        `https://maps.google.com/maps?q=${latitude},${longitude}`,
                         "_blank"
                       );
                     }
