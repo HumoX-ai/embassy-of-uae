@@ -269,6 +269,7 @@ export default async function UzbekistanPage({ params }: PageProps) {
                     src={city.image}
                     alt={city.name}
                     fill
+                    unoptimized
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
