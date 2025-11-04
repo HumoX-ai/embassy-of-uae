@@ -1,17 +1,4 @@
-import {
-  MapPin,
-  Users,
-  Calendar,
-  Globe,
-  Mountain,
-  Landmark,
-  GraduationCap,
-  TrendingUp,
-  Coins,
-  Factory,
-  Sparkles,
-  Heart,
-} from "lucide-react";
+import { MapPin, Users, Calendar, Globe } from "lucide-react";
 import { Metadata } from "next";
 import Image from "next/image";
 
@@ -107,39 +94,6 @@ export default async function UzbekistanPage({ params }: PageProps) {
     },
   ];
 
-  const features = [
-    {
-      icon: Landmark,
-      title: t("richHistory"),
-      description: t("richHistoryDesc"),
-    },
-    {
-      icon: Mountain,
-      title: t("naturalBeauty"),
-      description: t("naturalBeautyDesc"),
-    },
-    {
-      icon: Heart,
-      title: t("hospitalityTitle"),
-      description: t("hospitalityDesc"),
-    },
-    {
-      icon: Sparkles,
-      title: t("silkRoad"),
-      description: t("silkRoadDesc"),
-    },
-    {
-      icon: GraduationCap,
-      title: t("education"),
-      description: t("educationDesc"),
-    },
-    {
-      icon: TrendingUp,
-      title: t("economy"),
-      description: t("economyDesc"),
-    },
-  ];
-
   const cities = [
     {
       name: t("tashkent"),
@@ -161,12 +115,6 @@ export default async function UzbekistanPage({ params }: PageProps) {
       description: t("khivaDesc"),
       image: "/uzbekistan/khiva.jpg",
     },
-  ];
-
-  const economicSectors = [
-    { icon: Factory, name: t("industry"), value: "23%" },
-    { icon: Coins, name: t("agriculture"), value: "27%" },
-    { icon: TrendingUp, name: t("services"), value: "50%" },
   ];
 
   return (
@@ -220,34 +168,6 @@ export default async function UzbekistanPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Features Grid */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-foreground">
-            {t("featuresTitle")}
-          </h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {features.map((feature, index) => (
-              <div
-                key={index}
-                className="group relative bg-card rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden border border-border"
-              >
-                <div className="absolute top-0 left-0 w-2 h-full bg-primary" />
-                <div className="inline-flex p-4 rounded-xl bg-primary text-primary-foreground mb-6">
-                  <feature.icon className="w-8 h-8" />
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-card-foreground group-hover:text-primary transition-colors">
-                  {feature.title}
-                </h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Historic Cities */}
       <section className="py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -281,137 +201,6 @@ export default async function UzbekistanPage({ params }: PageProps) {
                     {city.description}
                   </p>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Economy Section */}
-      <section className="py-12 md:py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6">
-            {t("economyTitle")}
-          </h2>
-          <p className="text-center opacity-90 mb-12 md:mb-16 max-w-3xl mx-auto text-base md:text-lg">
-            {t("economySubtitle")}
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            {economicSectors.map((sector, index) => (
-              <div
-                key={index}
-                className="bg-card/10 backdrop-blur-md rounded-2xl p-8 border border-border/20 text-center hover:bg-card/20 transition-all duration-300 hover:scale-105"
-              >
-                <sector.icon className="w-16 h-16 mx-auto mb-4" />
-                <div className="text-4xl font-bold mb-2">{sector.value}</div>
-                <div className="text-lg opacity-90">{sector.name}</div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-16 max-w-4xl mx-auto">
-            <div className="bg-card/10 backdrop-blur-md rounded-2xl p-8 border border-border/20">
-              <h3 className="text-2xl font-bold mb-4">
-                {t("economicFactsTitle")}
-              </h3>
-              <ul className="space-y-3 opacity-90">
-                <li className="flex items-start">
-                  <span className="mr-3 mt-1">•</span>
-                  <span>{t("economicFact1")}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3 mt-1">•</span>
-                  <span>{t("economicFact2")}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3 mt-1">•</span>
-                  <span>{t("economicFact3")}</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="mr-3 mt-1">•</span>
-                  <span>{t("economicFact4")}</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Culture Section */}
-      <section className="py-12 md:py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-12 md:mb-16 text-foreground">
-            {t("cultureTitle")}
-          </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {[
-              {
-                title: t("cuisine"),
-                description: t("cuisineDesc"),
-                emoji: "🍲",
-              },
-              {
-                title: t("crafts"),
-                description: t("craftsDesc"),
-                emoji: "🎨",
-              },
-              {
-                title: t("music"),
-                description: t("musicDesc"),
-                emoji: "🎵",
-              },
-              {
-                title: t("festivals"),
-                description: t("festivalsDesc"),
-                emoji: "🎉",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-card rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-border"
-              >
-                <div className="text-5xl mb-4 text-center">{item.emoji}</div>
-                <h3 className="text-xl font-bold mb-3 text-center text-card-foreground">
-                  {item.title}
-                </h3>
-                <p className="text-muted-foreground text-center text-sm leading-relaxed">
-                  {item.description}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Fun Facts Section */}
-      <section className="py-12 md:py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-6 text-foreground">
-            {t("funFactsTitle")}
-          </h2>
-          <p className="text-center text-muted-foreground mb-12 md:mb-16 max-w-2xl mx-auto text-sm md:text-base">
-            {t("funFactsSubtitle")}
-          </p>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {[
-              { fact: t("funFact1"), icon: "🏛️" },
-              { fact: t("funFact2"), icon: "🌍" },
-              { fact: t("funFact3"), icon: "🏔️" },
-              { fact: t("funFact4"), icon: "🍈" },
-              { fact: t("funFact5"), icon: "📚" },
-              { fact: t("funFact6"), icon: "☀️" },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-muted/50 rounded-xl p-6 border-2 border-border hover:border-primary transition-all duration-300"
-              >
-                <div className="text-4xl mb-3">{item.icon}</div>
-                <p className="text-muted-foreground leading-relaxed">
-                  {item.fact}
-                </p>
               </div>
             ))}
           </div>

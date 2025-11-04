@@ -26,14 +26,6 @@ export const getMenuItems = (
     width: "300px",
   },
   {
-    title: t("president"),
-    subItems: [
-      { title: t("presidentTitle"), href: `/${lng}/president` },
-      { title: t("news"), href: "https://president.uz/en" },
-    ],
-    width: "280px",
-  },
-  {
     title: t("consularServices"),
     subItems: [
       {
@@ -56,6 +48,15 @@ export const getMenuItems = (
     ],
     width: "350px",
   },
+  {
+    title: t("president"),
+    subItems: [
+      { title: t("presidentTitle"), href: `/${lng}/president` },
+      { title: t("news"), href: "https://president.uz/en" },
+    ],
+    width: "280px",
+  },
+
   {
     title: t("investment"),
     subItems: [
