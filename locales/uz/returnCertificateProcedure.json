@@ -1,0 +1,49 @@
+{
+  "title": "O'zbekiston Respublikasiga qaytish uchun yo'riqnoma va sertifikat rasmiylashtirish tartibi",
+  "intro": "O'zbekiston Respublikasiga qaytish guvohnomasi (bundan keyin - Sertifikat) O'zbekiston Respublikasining chet eldagi diplomatik vakolatxonalari va konsullik muassasalari (bundan keyin - Konsullik muassasalari) tomonidan chet elda vaqtincha yashayotgan va O'zbekistonda doimiy ro'yxatda turgan O'zbekiston Respublikasi fuqarolari va fuqaroligi bo'lmagan shaxslarga quyidagi holatlarda beriladi: shaxsini tasdiqlovchi hujjatini yo'qotgan, hujjati yaroqsiz holga kelgan, xorijiy davlat vakolatli idoralari tomonidan olib qo'yilgan, o'g’irlatilgan, muddati o'tgan, varaqlari tugagan, avval pasport bilan rasmiylashtirilmagan fuqarolar.",
+  "applicationProcess": "Sertifikatni olish uchun arizachi Konsullik muassasasining veb-saytida shaxsni tasdiqlash haqidagi so'rovnoma – arizasini to'ldiradi va unga elektron fotosuratni biriktiradi.",
+  "requiredDocuments": "Sertifikatni olish uchun arizachi Konsullik muassasasiga quyidagi hujjatlarni taqdim qiladi:",
+  "documentsList": [
+    "qog'ozda chop etilgan, arizachinig imzosi qo'yilgan, bar-kodi ko'rsatilgan electron so'rovnoma – arizasi, 3 nusxada;",
+    "2 dona rangli fotosurat (3х4 sм);",
+    "Eslatma: (elektron ariza-anketaga biriktiriluvchi fotosuratga qo'yiladigan talablar)",
+    "fotosurat o'ichamlari 300x400 piksel (px) bo'lishi;",
+    "fotosurat sifati 96 dpi dan kam bo'lmasligi;",
+    "fayl formati JPEG;",
+    "fayl hajmi 30KB dan oshmasligi;",
+    "ko'z qorachiqlari orasidagi masofa 90 px bo'lishi;",
+    "suratning tiniq va kontrastli bo'lishi;",
+    "suratga tushuvchi shaxsning nigohi obyektivga tog'ri yo'naltirilgan bo'lishi;",
+    "yuz pardozining (makiyaj) me'yoriyligi;",
+    "suratdagi yorug'lik va kontrastning me'yoriyligi;",
+    "ko'zlar ochiq va yaxshi ko'rinishi, sochlar ularni to'sib qo'ymagan bo'lishi;",
+    "fotosuratda yuzning markazda joylashuvi, ko'zoynaksiz, bosh kiyimisiz, yuz qirralarining aniq ko'rinishi;",
+    "orqa fonning yorug', bir xil, dog'larsiz, bezaksiz va chiziqlarsiz bo'lishi",
+    "muddati o'tgan, yaroqsiz holga kelgan, viza varaqlari tugagan shaxsni tasdiqlovchi hujjatning asli;",
+    "shaxsni tasdiqlovchi hujjatning olib qo'yilganligi yoki o'g'irlatilganligini tasdiqlovchi xorijiy davlat vakolatli idoralari ma’lumotnomasining asli va nusxasi;",
+    "shaxsni tasdiqlovchi hujjat yo'qolganda - yo'qolgan shaxsni tasdiqlovchi hujjat yoki shaxsni tasdiqlovchi boshqa ma’lumotnoma nusxasi va shaxsni tasdiqlovchi hujjat yo'qolganligi haqida vakolatli idoralarning ma’lumotnomasi (imkoniyat darajasida);",
+    "avval pasport bilan rasmiylashtirilmagan fuqarolar uchun – ularning tug'ilganlik haqida guvohnomasi va ota-onasining pasportlaridan nusxa;",
+    "konsullik to'lovlari chiptasi (kvitansiyasi)."
+  ],
+  "issuance": "Arizachiga Sertifikat O'zbekiston Respublikasi vakolatli idoralari tomonidan uning shaxsi tasdiqlangandan so'ng beriladi.",
+  "validity": "Sertifikat bir oy, istisno holatlarda uch oygacha muddatga beriladi. Sertifikatning muddati uzaytirilmaydi.",
+  "individual": "Sertifikat har bir kishiga alohida rasmiylashtiriladi. Sertifikatga bolalar yozilmaydi.",
+  "submissionRequirement": "Shaxsni tasdiqlovchi hujjat yaroqsiz holga kelgan, muddati o'tgan va viza varaqlari tugagan holda mazkur hujjat Konsullik muassasasiga topshirilishi lozim.",
+  "invalidDeclaration": "Shaxsni tasdiqlovchi hujjat yuqotilgan, xorijiy davlat vakolatli idoralari tomonidan olib qo'yilgan va o'g'irlatilganligi sababli Sertifikatni olish maqsadida Konsullik muassasasiga murojaat qilib, so'rovnoma – arizasi topshirilgandan so'ng arizachining mazkur shaxsni tasdiqlovchi hujjati haqiqiy emas, deb e’lon qilinadi va topilgan yoki qaytarilgan shaxsni tasdiqlovchi hujjati Konsullik muassasasiga topshirilishi shart.",
+  "submissionDeadline": "Arizachi O'zbekistonga kelgandan so'ng 10 kundan kech bo'lmagan muddat ichida Sertifikatni doimiy yashash joyidagi ichki ishlar idoralariga pasport olish uchun topshirilishi lozim.",
+  "fees": "Sertifikat olish uchun 50 AQSH dollari miqdoridagi konsullik to'lovlari va 5 (MDH davlatlarida)-10 (boshqa davlatlarda) AQSH dollari miqdoridagi ma’muriy xarajatlar undiriladi. Bunda 16 yoshga to'lmagan bolalar konsullik to'lovlaridan ozod etiladi.",
+  "notIssuedTo": "Sertifikat quyidagi shaxslarga berilmaydi:",
+  "notIssuedList": [
+    "xorijiy fuqarolarga;",
+    "O'zbekiston hududida doimiy ro'yxati yo'q fuqaroligi bo'lmagan shaxslarga;",
+    "uzrli sababsiz O'zbekiston hududida 3 yildan ortiq bo'lmaganligi sababli O'zbekiston hududidagi doimiy ro'yxati bekor qilingan fuqaroligi bo'lmagan shaxslarga;",
+    "O'zbekiston fuqaroligidan chiqqan yoki fuqaroligi yo'qotilgan shaxslarga."
+  ],
+  "refusalCases": "Quyidagi holatlarda ham arizachiga Sertifikat berish rad etilishi mumkin:",
+  "refusalList": [
+    "o'zi haqida yoki shaxsni tasdiqlovchi hujjatining yo'qolganligi to'g'risida yolg'on ma’lumotlar bersa;",
+    "taqdim qilinishi lozim bo'lgan hujjatlar va ma’lumotlar belgilangan talablarga mos kelmasa (hujjatlar yetarli emas, so'rovnoma – arizasidagi ma’lumotlar aniq va to'liq emas);",
+    "taqdim qilingan hujjatlardagi ma’lumotlar haqiqiy bo'lmasa."
+  ],
+  "finalNote": "Sertifikat berilgan shaxs O'zbekistonga kelganidan so'ng yangi pasportni rasmiylashtirish uchun doimiy yashash joyidagi ichki ishlar idoralariga ushbu sertifikatni topshirishi shart."
+}

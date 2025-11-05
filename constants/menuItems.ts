@@ -34,7 +34,7 @@ export const getMenuItems = (
       },
       {
         title: t("returnCertificateProcedure"),
-        href: "/page/2550",
+        href: `/${lng}/return-certificate-procedure`,
       },
       { title: t("temporaryConsularRegistration"), href: "/page/365" },
       { title: t("permanentConsularRegistration"), href: "/page/366" },

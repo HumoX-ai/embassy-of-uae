@@ -1,0 +1,49 @@
+{
+  "title": "Procedure for Obtaining a Return Certificate to the Republic of Uzbekistan",
+  "intro": "The Return Certificate to the Republic of Uzbekistan (hereinafter referred to as the Certificate) is issued by the diplomatic missions and consular institutions of the Republic of Uzbekistan abroad (hereinafter referred to as Consular Institutions) to citizens of the Republic of Uzbekistan and stateless persons who are temporarily residing abroad and are permanently registered in Uzbekistan in the following cases: those who have lost their identity document, whose document has become invalid, confiscated by foreign state authorities, stolen, expired, whose visa pages have run out, citizens who were not previously registered with a passport.",
+  "applicationProcess": "To obtain the Certificate, the applicant fills out the identity verification questionnaire-application on the website of the Consular Institution and attaches an electronic photo to it.",
+  "requiredDocuments": "To obtain the Certificate, the applicant submits the following documents to the Consular Institution:",
+  "documentsList": [
+    "printed on paper, signed by the applicant, barcode indicated electronic questionnaire-application, in 3 copies;",
+    "2 color photos (3x4 cm);",
+    "Note: (requirements for the photo attached to the electronic application form)",
+    "photo dimensions 300x400 pixels (px);",
+    "photo quality not less than 96 dpi;",
+    "file format JPEG;",
+    "file size not exceeding 30KB;",
+    "distance between eye pupils 90 px;",
+    "the image should be clear and contrasty;",
+    "the gaze of the person in the photo should be directed straight at the camera;",
+    "normal makeup;",
+    "normal lighting and contrast in the photo;",
+    "eyes open and clearly visible, hair not covering them;",
+    "face centered in the photo, without glasses, without headwear, clear facial contours;",
+    "background light, uniform, without spots, decorations and lines",
+    "the original of the expired, invalid, visa pages exhausted identity document;",
+    "the original and copy of the certificate from foreign state authorities confirming that the identity document has been confiscated or stolen;",
+    "when the identity document is lost - a copy of the lost identity document or another identity certificate and a certificate from authorized bodies about the loss of the identity document (if possible);",
+    "for citizens not previously registered with a passport - a copy of their birth certificate and parents' passports;",
+    "consular fee receipt (receipt)."
+  ],
+  "issuance": "The Certificate is issued to the applicant after his identity is verified by the authorized bodies of the Republic of Uzbekistan.",
+  "validity": "The Certificate is issued for one month, in exceptional cases up to three months. The validity of the Certificate is not extended.",
+  "individual": "The Certificate is issued separately for each person. Children are not entered in the Certificate.",
+  "submissionRequirement": "If the identity document has become invalid, expired, and visa pages have run out, this document must be submitted to the Consular Institution.",
+  "invalidDeclaration": "In case of loss of the identity document, confiscation by foreign state authorities, or theft, after applying to the Consular Institution for obtaining the Certificate and submitting the questionnaire-application, the applicant's identity document is declared invalid, and the found or returned identity document must be submitted to the Consular Institution.",
+  "submissionDeadline": "After arriving in Uzbekistan, the applicant must submit the Certificate to the internal affairs bodies at the place of permanent residence for obtaining a passport within no more than 10 days.",
+  "fees": "For obtaining the Certificate, consular fees of 50 US dollars and administrative expenses of 5 (in CIS countries) - 10 (in other countries) US dollars are charged. Children under 16 are exempt from consular fees.",
+  "notIssuedTo": "The Certificate is not issued to:",
+  "notIssuedList": [
+    "foreign citizens;",
+    "stateless persons without permanent registration in the territory of Uzbekistan;",
+    "stateless persons whose permanent registration in the territory of Uzbekistan has been canceled due to absence from the territory of Uzbekistan for more than 3 years without valid reasons;",
+    "persons who have renounced Uzbek citizenship or lost their citizenship."
+  ],
+  "refusalCases": "Issuance of the Certificate may also be refused to the applicant in the following cases:",
+  "refusalList": [
+    "if he provides false information about himself or about the loss of his identity document;",
+    "if the documents and information to be submitted do not meet the established requirements (insufficient documents, incomplete or inaccurate information in the questionnaire-application);",
+    "if the information in the submitted documents is not genuine."
+  ],
+  "finalNote": "The person who received the Certificate must submit this certificate to the internal affairs bodies at the place of permanent residence for registration of a new passport after arriving in Uzbekistan."
+}
