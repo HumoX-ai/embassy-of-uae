@@ -30,7 +30,7 @@ export const getMenuItems = (
     subItems: [
       {
         title: t("infoForForeigners"),
-        href: "/page/2549",
+        href: `/${lng}/info-for-foreigners`,
       },
       {
         title: t("returnCertificateProcedure"),
