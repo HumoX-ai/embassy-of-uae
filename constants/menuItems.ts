@@ -5,10 +5,7 @@ export type MenuItem = {
   width?: string;
 };
 
-export const getMenuItems = (
-  lng: string,
-  t: (key: string) => string
-): MenuItem[] => [
+export const getMenuItems = (lng: string, t: (key: string) => string): MenuItem[] => [
   {
     title: t("home"),
     href: `/${lng}`,
@@ -24,6 +21,15 @@ export const getMenuItems = (
       { title: t("tourismPotential"), href: "/page/2544" },
     ],
     width: "300px",
+  },
+
+  {
+    title: t("president"),
+    subItems: [
+      { title: t("presidentTitle"), href: `/${lng}/president` },
+      { title: t("news"), href: "https://president.uz/en" },
+    ],
+    width: "280px",
   },
   {
     title: t("consularServices"),
@@ -48,15 +54,6 @@ export const getMenuItems = (
     ],
     width: "350px",
   },
-  {
-    title: t("president"),
-    subItems: [
-      { title: t("presidentTitle"), href: `/${lng}/president` },
-      { title: t("news"), href: "https://president.uz/en" },
-    ],
-    width: "280px",
-  },
-
   {
     title: t("investment"),
     subItems: [
