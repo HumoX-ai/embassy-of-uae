@@ -49,7 +49,10 @@ export const getMenuItems = (
         title: t("temporaryConsularRegistration"),
         href: `/${lng}/temporary-consular-registration`,
       },
-      { title: t("permanentConsularRegistration"), href: "/page/366" },
+      {
+        title: t("permanentConsularRegistration"),
+        href: `/${lng}/permanent-consular-registration`,
+      },
       { title: t("biometricPassportIssuance"), href: "/page/368" },
       { title: t("documentRequestProcedure"), href: "/page/369" },
       {
