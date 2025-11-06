@@ -5,7 +5,10 @@ export type MenuItem = {
   width?: string;
 };
 
-export const getMenuItems = (lng: string, t: (key: string) => string): MenuItem[] => [
+export const getMenuItems = (
+  lng: string,
+  t: (key: string) => string
+): MenuItem[] => [
   {
     title: t("home"),
     href: `/${lng}`,
@@ -42,7 +45,10 @@ export const getMenuItems = (lng: string, t: (key: string) => string): MenuItem[
         title: t("returnCertificateProcedure"),
         href: `/${lng}/return-certificate-procedure`,
       },
-      { title: t("temporaryConsularRegistration"), href: "/page/365" },
+      {
+        title: t("temporaryConsularRegistration"),
+        href: `/${lng}/temporary-consular-registration`,
+      },
       { title: t("permanentConsularRegistration"), href: "/page/366" },
       { title: t("biometricPassportIssuance"), href: "/page/368" },
       { title: t("documentRequestProcedure"), href: "/page/369" },
