@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Link from "next/link";
 
 import { useTranslation } from "@/i18n";
 import { Language, languages, fallbackLng } from "@/i18n/settings";
