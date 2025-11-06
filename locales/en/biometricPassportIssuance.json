@@ -1,0 +1,90 @@
+{
+  "title": "Procedure for Issuing a Biometric Passport of a Citizen of the Republic of Uzbekistan",
+  "intro": "In accordance with the Decree of the President of the Republic of Uzbekistan dated June 23, 2009 No. PF-4117 \"On measures to further improve the passport system in the Republic of Uzbekistan\", from January 1, 2011, the biometric passport of a citizen of the Republic of Uzbekistan was introduced in Uzbekistan.",
+  "description": "The biometric passport of the Republic of Uzbekistan is a document confirming the identity and citizenship of the passport holder within the territory of the Republic of Uzbekistan and beyond.",
+  "validityTitle": "In accordance with the recommendations of the International Civil Aviation Organization (ICAO), the biometric passport of the Republic of Uzbekistan is issued for the following validity periods:",
+  "validityList": [
+    "for citizens up to one year old - for 2 years;",
+    "for citizens from one to sixteen years old - for 5 years. At the same time, the validity period of the passport issued to the citizen must not exceed his 16 years;",
+    "for citizens from 16 years old, the passport is issued for 10 years."
+  ],
+  "specialCase": "In special cases, if the person is leaving the territory of the Republic and is over 15 years old, the passport may be issued for 10 years to this person under 16 years old.",
+  "replacement": "If a citizen is leaving abroad for a long period and the validity period of his passport is less than one year, this document may be replaced.",
+  "featuresTitle": "The passport is prepared with biometric data in accordance with the standards set by the International Civil Aviation Organization (ICAO) and is personalized in Uzbek and English using Latin letters, and for the Republic of Karakalpakstan in Karakalpak, Uzbek and English languages. In addition to the main information, a number of additional information is entered into the passport. The main ones are marks about military service, marriage or divorce, registration or deregistration, exit permit abroad and crossing the state borders of the Republic of Uzbekistan. The number of passport pages has been increased by increasing the pages allocated for visas. In addition, the photo is inserted into the new type of passport by printing, which increases the level of protection against possible forgery of the document.",
+  "eligibleCitizensTitle": "Citizens who can obtain a biometric passport at the foreign missions of the Republic of Uzbekistan:",
+  "eligibleCitizensList": [
+    "Citizens who have left abroad for permanent residence and are registered in the permanent consular register at the foreign missions of the Republic of Uzbekistan;",
+    "Citizens who have left abroad for more than six months for business trips, study, work under contract, treatment and are registered in the temporary consular register at the foreign missions of the Republic of Uzbekistan."
+  ],
+  "issuanceCasesTitle": "Passport registration and issuance is carried out in the following cases:",
+  "issuanceCasesList": [
+    "when replacing a non-biometric passport with a biometric passport;",
+    "when the person reaches 16 years old;",
+    "when the validity period of the passport expires;",
+    "when the passport is lost;",
+    "when the pages allocated for registration (deregistration), special information or visas are used up;",
+    "when the passport blank becomes invalid;",
+    "when a child is born abroad;",
+    "when the surname, name, patronymic, nationality, date of birth changes;",
+    "when a person under 16 years old is leaving the Republic of Uzbekistan;",
+    "when inaccuracies and errors in the records are detected;",
+    "when citizenship of the Republic of Uzbekistan is acquired."
+  ],
+  "documentsTitle": "Citizens registered in permanent or temporary consular registers submit the following documents to the consular institution for passport registration:",
+  "permanentCitizensTitle": "a) For citizens registered in the permanent consular register:",
+  "permanentCitizensList": [
+    "application for passport registration in the prescribed form (Annex No. 1);",
+    "previously issued passport and its copy;",
+    "photo measuring 35 x 45 mm (1 pc);",
+    "address sheet for leaving abroad for permanent residence (for citizens living in the CIS countries) (Annex No. 2) or a sticker with the entry \"Permission to leave for permanent residence\" formalized by the departments of the Ministry of Internal Affairs and the State Security Service (Annex No. 3)."
+  ],
+  "permanentCitizensNote": "These documents are not required if there is a mark in the passport about registration in the permanent consular register.",
+  "permanentCitizensAdditional": [
+    "document confirming that the citizen is residing in the territory of a foreign state in accordance with the laws of that state (visa, residence permit, temporary residence permit, relevant entry in the passport, certificate, etc.);",
+    "receipt of payment of consular fee and service charges."
+  ],
+  "minorsPermanentTitle": "b) For minors registered in the permanent consular register together with their parents:",
+  "minorsPermanentList": [
+    "application for issuance of passport in the prescribed form (Annex No. 1);",
+    "original and copy of birth certificate (for citizens up to 16 years old or when registering a passport for the first time) or passport (if available) and its copy;",
+    "photo measuring 35 x 45 mm (1 pc);",
+    "original and copies of parents' passports - for first passport registration. If it is not possible to submit one of the parents' passports, a document explaining this situation is submitted, including a death certificate, marriage dissolution certificate or extract from the court decision on marriage dissolution (copy), or extract from the court decision on recognition of marriage as invalid (copy), certificate from authorized bodies on recognition of one of the parents of the passport recipient as missing or deceased, document confirming that the child is raised by a single father or mother or a document equivalent to this document under the legislation of a foreign state;",
+    "address sheet for leaving abroad for permanent residence or its copy (for citizens living in the CIS countries) (Annex No. 2) or a sticker with the entry \"Permission to leave for permanent residence\" formalized by the departments of the Ministry of Internal Affairs and the State Security Service (Annex No. 3)."
+  ],
+  "minorsPermanentNote": "These documents are not required if there is a mark in the passport about registration in the permanent consular register.",
+  "minorsPermanentAdditional": [
+    "document confirming that the citizen is residing in the territory of a foreign state in accordance with the laws of that state (visa, residence permit, temporary residence permit, relevant entry in the passport, certificate, etc.);",
+    "if one of the parents is a citizen of a foreign state, his notarized application stating that he has no objection to his child obtaining a passport of a citizen of the Republic of Uzbekistan;",
+    "receipt of payment of consular fee and service charges."
+  ],
+  "minorsPermanentNationality": "If parents belong to different nationalities, the \"nationality\" column indicates the nationality of the father or mother at the applicant's discretion. The consular institution official compares the applicant's parents' full name and nationality with the applicant's birth certificate.",
+  "temporaryCitizensTitle": "c) For citizens registered in the temporary consular register:",
+  "temporaryCitizensIntro": "Passports are issued to citizens of this category if they have legally left abroad for more than six months for business trips, study, treatment and work under contract and have formalized their temporary departure abroad in the prescribed manner.",
+  "temporaryCitizensNote": "Citizens who are temporarily abroad and not registered in the temporary consular register, in cases where they need to register or obtain a passport (if they have lost their passport, missed the validity period or rendered it invalid), apply to the relevant consular institution to obtain a return certificate (Certificate) to the Republic of Uzbekistan.",
+  "temporaryCitizensList": [
+    "application for passport registration in the prescribed form (Annex No. 1);",
+    "request from the organization or institution in the prescribed manner, if left abroad through an organization or institution;",
+    "original passport and its copy;",
+    "photo measuring 35 x 45 mm (1 pc);",
+    "certificate from the educational institution (with the period of study indicated and translated) or from the place of work (with the contract translated);",
+    "document confirming that the citizen is legally residing in the territory of a foreign state (visa, certificate, migration card for CIS countries, etc.);",
+    "receipt of payment of consular fee and service charges."
+  ],
+  "minorsTemporaryTitle": "d) For minors registered in the temporary consular register with their parents:",
+  "minorsTemporaryIntro": "A passport is issued for a citizen of this category in the following cases:",
+  "minorsTemporaryCases": [
+    "if the parents have left with the child for more than six months for business trips, study, treatment and work under contract and have formalized their temporary departure abroad in the prescribed manner;",
+    "if the child was born after the parents left for this foreign country."
+  ],
+  "minorsTemporaryList": [
+    "application for passport registration in the prescribed form (Annex No. 1);",
+    "request from the organization or institution in the prescribed manner, if left abroad through an organization or institution;",
+    "original and copy of birth certificate (for citizens up to 16 years old or when registering a passport for the first time) or passport (if available) and its copy;",
+    "photo measuring 35 x 45 mm (1 pc);",
+    "original and copies of parents' passports - for first passport registration. If it is not possible to submit one of the parents' passports, a document explaining this situation is submitted, including a death certificate, marriage dissolution certificate or extract from the court decision on marriage dissolution (copy), or extract from the court decision on recognition of marriage as invalid (copy), certificate from authorized bodies on recognition of one of the parents of the passport recipient as missing or deceased, document confirming that the child is raised by a single father or mother or a document equivalent to this document under the legislation of a foreign state;",
+    "document confirming that the parents, who are citizens of the Republic of Uzbekistan, are residing in the territory of a foreign state in accordance with the laws of that state (study or medical visa, certificate or migration card for CIS countries, temporary residence permit, relevant entry in the passport, etc.);",
+    "receipt of payment of consular fee and service charges."
+  ],
+  "noteTitle": "Note:",
+  "noteContent": "In accordance with the Decree of the President of the Republic of Uzbekistan dated January 5, 2011 No. PF-4262 \"On additional measures to improve the passport system in the Republic of Uzbekistan\", the Regulations on the Passport System of the Republic of Uzbekistan were approved. The validity of the non-biometric passport of a citizen of the Republic of Uzbekistan and the non-biometric travel document of a stateless person was established until December 31, 2015 by this Decree. To ensure the implementation of the Decree, the foreign missions of the Republic of Uzbekistan started issuing and replacing biometric passports for citizens registered in permanent and temporary consular registers from 2013. Taking into account that not all citizens staying abroad fall into the category of persons for whom biometric passports are issued at the foreign missions of the Republic of Uzbekistan in accordance with the legislation of the Republic of Uzbekistan, by the decision of the authorized bodies of the Republic, it was established that the non-biometric passport of the Republic of Uzbekistan can be used by its holder only as a return document to Uzbekistan until July 1, 2018, if the validity period of the passport has not expired, including for transit through third countries."
+}
