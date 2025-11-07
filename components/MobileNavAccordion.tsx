@@ -9,10 +9,16 @@ import {
 } from "@/components/ui/accordion";
 import { cn } from "@/lib/utils";
 
+type SubItem = {
+  title: string;
+  href: string;
+  nestedItems?: { title: string; href: string }[];
+};
+
 type MenuItem = {
   title: string;
   href?: string;
-  subItems?: { title: string; href: string }[];
+  subItems?: SubItem[];
 };
 
 export default function MobileNavAccordion({
@@ -60,14 +66,48 @@ export default function MobileNavAccordion({
                   <AccordionContent className="px-5 pb-2">
                     <div className="space-y-2 pl-6">
                       {item.subItems?.map((sub, subIndex) => (
-                        <Link
-                          key={subIndex}
-                          href={sub.href}
-                          onClick={onLinkClick}
-                          className="block text-base text-muted-foreground hover:text-foreground"
-                        >
-                          {sub.title}
-                        </Link>
+                        <div key={subIndex}>
+                          {sub.nestedItems ? (
+                            <Accordion
+                              type="single"
+                              collapsible
+                              className="space-y-0"
+                            >
+                              <AccordionItem
+                                value={`nested-${index}-${subIndex}`}
+                                className="border-0"
+                              >
+                                <AccordionTrigger className="py-2 text-base text-muted-foreground hover:text-foreground hover:no-underline">
+                                  {sub.title}
+                                </AccordionTrigger>
+                                <AccordionContent className="pb-2">
+                                  <div className="space-y-2 pl-4">
+                                    {sub.nestedItems.map(
+                                      (nested, nestedIndex) => (
+                                        <Link
+                                          key={nestedIndex}
+                                          href={nested.href}
+                                          onClick={onLinkClick}
+                                          className="block text-sm text-muted-foreground hover:text-foreground"
+                                        >
+                                          {nested.title}
+                                        </Link>
+                                      )
+                                    )}
+                                  </div>
+                                </AccordionContent>
+                              </AccordionItem>
+                            </Accordion>
+                          ) : (
+                            <Link
+                              href={sub.href}
+                              onClick={onLinkClick}
+                              className="block text-base text-muted-foreground hover:text-foreground"
+                            >
+                              {sub.title}
+                            </Link>
+                          )}
+                        </div>
                       ))}
                     </div>
                   </AccordionContent>

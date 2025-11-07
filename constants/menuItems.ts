@@ -1,7 +1,13 @@
+export type SubItem = {
+  title: string;
+  href: string;
+  nestedItems?: { title: string; href: string }[];
+};
+
 export type MenuItem = {
   title: string;
   href?: string;
-  subItems?: { title: string; href: string }[];
+  subItems?: SubItem[];
   width?: string;
 };
 
@@ -31,6 +37,40 @@ export const getMenuItems = (
     subItems: [
       { title: t("presidentTitle"), href: `/${lng}/president` },
       { title: t("news"), href: "https://president.uz/en" },
+    ],
+    width: "280px",
+  },
+  {
+    title: t("relations"),
+    subItems: [
+      { title: t("economicCooperation"), href: "/page/357" },
+      { title: t("politicalRelations"), href: "/page/358" },
+      { title: t("culturalHumanitarianCooperation"), href: "/page/359" },
+    ],
+    width: "280px",
+  },
+  {
+    title: t("investment"),
+    subItems: [
+      {
+        title: t("investInUzbekistan"),
+        href: "https://invest.gov.uz/uzipa/?lang=en",
+      },
+      {
+        title: t("investmentPotential"),
+        href: "https://invest.gov.uz/investor-taxonomy/potential/",
+      },
+      { title: t("investmentCooperation"), href: "/page/2536" },
+    ],
+    width: "320px",
+  },
+  {
+    title: t("tourism"),
+    subItems: [
+      {
+        title: t("welcomeToUzbekistan"),
+        href: "https://uzbekistan.travel/en/",
+      },
     ],
     width: "280px",
   },
@@ -66,47 +106,24 @@ export const getMenuItems = (
     ],
     width: "350px",
   },
-  {
-    title: t("investment"),
-    subItems: [
-      {
-        title: t("investInUzbekistan"),
-        href: "https://invest.gov.uz/uzipa/?lang=en",
-      },
-      {
-        title: t("investmentPotential"),
-        href: "https://invest.gov.uz/investor-taxonomy/potential/",
-      },
-      { title: t("investmentCooperation"), href: "/page/2536" },
-    ],
-    width: "320px",
-  },
-  {
-    title: t("tourism"),
-    subItems: [
-      {
-        title: t("welcomeToUzbekistan"),
-        href: "https://uzbekistan.travel/en/",
-      },
-    ],
-    width: "280px",
-  },
-  {
-    title: t("relations"),
-    subItems: [
-      { title: t("economicCooperation"), href: "/page/357" },
-      { title: t("politicalRelations"), href: "/page/358" },
-      { title: t("culturalHumanitarianCooperation"), href: "/page/359" },
-    ],
-    width: "280px",
-  },
+
   {
     title: t("embassyMenu"),
     subItems: [
       { title: t("ambassador"), href: "/page/360" },
       { title: t("ambassadorMessage"), href: "/page/361" },
-      { title: t("aboutEmbassy"), href: "/page/362" },
-      { title: t("embassyTeam"), href: "/page/363" },
+      {
+        title: t("embassyTeam"),
+        href: "/page/363",
+        nestedItems: [
+          {
+            title: t("politicalCulturalDepartment"),
+            href: "/page/political-cultural",
+          },
+          { title: t("tradeEconomicDepartment"), href: "/page/trade-economic" },
+          { title: t("consularLegalDepartment"), href: "/page/consular-legal" },
+        ],
+      },
     ],
     width: "280px",
   },

@@ -15,6 +15,12 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import {
   Sheet,
   SheetContent,
   SheetFooter,
@@ -44,6 +50,7 @@ export default function Header({ lng }: HeaderProps) {
   const { t } = useTranslation(lng, "header");
   const [isOpen, setIsOpen] = useState(false);
   const [isGrayscale, setIsGrayscale] = useState(false);
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     if (isGrayscale) {
@@ -219,12 +226,84 @@ export default function Header({ lng }: HeaderProps) {
                         >
                           {item.subItems?.map((sub, subIndex) => (
                             <li key={subIndex}>
-                              <Link
-                                href={sub.href}
-                                className="block text-sm p-2 rounded-md hover:bg-accent"
-                              >
-                                {sub.title}
-                              </Link>
+                              {sub.nestedItems ? (
+                                <DropdownMenu
+                                  open={openDropdown === `${index}-${subIndex}`}
+                                  onOpenChange={(open) => {
+                                    setOpenDropdown(
+                                      open ? `${index}-${subIndex}` : null
+                                    );
+                                  }}
+                                >
+                                  <DropdownMenuTrigger asChild>
+                                    <div
+                                      className="w-full text-left text-sm p-2 rounded-md hover:bg-accent flex items-center justify-between cursor-pointer"
+                                      onMouseEnter={() =>
+                                        setOpenDropdown(`${index}-${subIndex}`)
+                                      }
+                                      onMouseLeave={(e) => {
+                                        const relatedTarget =
+                                          e.relatedTarget as HTMLElement;
+                                        if (
+                                          !relatedTarget?.closest(
+                                            '[role="menu"]'
+                                          )
+                                        ) {
+                                          setOpenDropdown(null);
+                                        }
+                                      }}
+                                    >
+                                      <span>{sub.title}</span>
+                                      <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        strokeWidth="2"
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        className="ml-2"
+                                      >
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                      </svg>
+                                    </div>
+                                  </DropdownMenuTrigger>
+                                  <DropdownMenuContent
+                                    side="right"
+                                    align="start"
+                                    className="w-[280px] p-2"
+                                    onMouseEnter={() =>
+                                      setOpenDropdown(`${index}-${subIndex}`)
+                                    }
+                                    onMouseLeave={() => setOpenDropdown(null)}
+                                  >
+                                    {sub.nestedItems.map(
+                                      (nested, nestedIndex) => (
+                                        <DropdownMenuItem
+                                          key={nestedIndex}
+                                          asChild
+                                        >
+                                          <Link
+                                            href={nested.href}
+                                            className="cursor-pointer"
+                                          >
+                                            {nested.title}
+                                          </Link>
+                                        </DropdownMenuItem>
+                                      )
+                                    )}
+                                  </DropdownMenuContent>
+                                </DropdownMenu>
+                              ) : (
+                                <Link
+                                  href={sub.href}
+                                  className="block text-sm p-2 rounded-md hover:bg-accent"
+                                >
+                                  {sub.title}
+                                </Link>
+                              )}
                             </li>
                           ))}
                         </ul>

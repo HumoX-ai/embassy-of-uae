@@ -73,13 +73,30 @@
 
 // clientCode(new CSVExporter());
 
-let nums = [5, 3, 8, 4, 2];
+// let nums = [5, 3, 8, 4, 2];
 
-for (let i = 0; i < nums.length - 1; i++) {
-  for (let j = 0; j < nums.length - i - 1; j++) {
-    if (nums[j] > nums[j + 1]) {
-      [nums[j], nums[j + 1]] = [nums[j + 1], nums[j]];
+// for (let i = 0; i < nums.length - 1; i++) {
+//   for (let j = 0; j < nums.length - i - 1; j++) {
+//     if (nums[j] > nums[j + 1]) {
+//       [nums[j], nums[j + 1]] = [nums[j + 1], nums[j]];
+//     }
+//   }
+// }
+// console.log(nums);
+
+function sortArray(nums) {
+  for (let i = 0; i < nums.length; i++) {
+    let min = i;
+    for (let j = 0; j < nums.length - i - 1; j++) {
+      if (nums[j] < nums[j + 1]) {
+        if (nums[j] < nums[min]) {
+          min = j;
+        }
+      }
     }
+    [nums[i], nums[min]] = [nums[min], nums[i]];
   }
+  return nums;
 }
-console.log(nums);
+
+console.log(sortArray([3, 2, 4, 1, 5, 6, 7]));
