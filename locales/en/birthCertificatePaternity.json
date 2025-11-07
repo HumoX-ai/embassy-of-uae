@@ -1,0 +1,30 @@
+{
+  "title": "Procedure for Issuing Birth Certificate and Establishing Paternity",
+  "marriedParents": "If parents are officially married, one of them must visit the consulate and provide the following documents:",
+  "marriedList": [
+    "Application from the child's mother or father;",
+    "Original certificate from the medical institution about the child's birth;",
+    "Passports of the child's parents;",
+    "Marriage certificate of the child's parents or its certified copy;",
+    "Certified copy of the departure slip with the applicant's signature (for CIS countries);",
+    "If one of the child's parents is a foreign citizen, the notarized consent of the foreign citizen parent (or mother) to issue the birth certificate of the Republic of Uzbekistan and to obtain citizenship of the Republic of Uzbekistan must also be provided."
+  ],
+  "paternityTitle": "Establishing Paternity",
+  "paternityDesc": "The paternity of a person not married to the child's mother is established based on a joint application submitted by the person who recognizes himself as the father and the mother to the consular institution.",
+  "paternityNote": "If registration of birth and establishment of paternity are carried out at the same time, with the consent of the parents, the child is given a surname at the same time, and information about the father is entered according to the submitted application. In this case, the application of the single mother is not required.",
+  "paternityNoProxy": "Establishment of paternity based on power of attorney is not allowed.",
+  "civilMarriage": "If parents are in civil marriage (with paternity established for the child), both parents must come to the consulate:",
+  "civilList": [
+    "Application from the child's mother or father;",
+    "Joint application of father and mother for establishing paternity (form obtained from the consul);",
+    "Original certificate from the medical institution about the child's birth;",
+    "Passports of the child's parents;",
+    "If one of the child's parents is a foreign citizen, the notarized consent of the foreign citizen parent (or mother) to issue the birth certificate of the Republic of Uzbekistan and to obtain citizenship of the Republic of Uzbekistan must also be provided."
+  ],
+  "singleMother": "If the child's mother is single (without paternity established for the child), the mother must come to the consulate:",
+  "singleList": [
+    "Application from the child's mother (form obtained from the consul).",
+    "Original certificate from the medical institution about the child's birth.",
+    "Passport of the child's mother."
+  ]
+}

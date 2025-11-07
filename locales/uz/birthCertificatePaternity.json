@@ -1,0 +1,30 @@
+{
+  "title": "Tug'ilganlik haqidagi guvohnoma rasmiylashtirish va otalikni belgilash tartibi",
+  "marriedParents": "Agar ota-onalar rasmiy nikohlangan bo'lsalar, ulardan birontasi konsullikka tashrif buyurishi va quyidagi hujjatlarni taqdim etishi zarur:",
+  "marriedList": [
+    "Bola onasining yoki otasining arizasi;",
+    "Tibbiy muassasaning farzand tug'ilganligi to'g'risidagi ma’lumotnomasi asl nusxasi;",
+    "Bola ota-onasining pasportlari;",
+    "Bolaning ota-onasi nikohlangani to'g'risidagi guvohnoma yoki uning tasdiqlangan nusxasi;",
+    "Ariza beruvchi yozib qo'yilgan jo'nab ketish varag'ining tasdiqlangan nusxasi (MDH mamlakatlari uchun);",
+    "Agar bolaning ota-onasidan biri xorijiy davlat fuqarosi bo'lsa, bolaning xorijiy davlat fuqarosi bo'lgan otasining (yoki onasining) O'zbekiston Respublikasining tug'ilganlik guvohnomasini rasmiylashtirish, hamda O'zbekiston Respublikasi fuqaroligini olish uchun notarial tasdiqlangan roziligini ham taqdim etish shart."
+  ],
+  "paternityTitle": "Otalikni belgilash",
+  "paternityDesc": "Bolaning onasi bilan nikohda bo'lmagan shaxsning otaligi, o'zini bolaning otasi deb tan olgan shaxs va onaning konsullik muassasasiga birgalikda topshirgan arizasiga binoan belgilanadi.",
+  "paternityNote": "Agar tug'ilganlikni qayd qilish va otalikni belgilash bir paytda amalga oshirilayotgan bo'lsa, ota-onaning roziligi bilan shu vaqtning o'zida bolaga familiya beriladi, ota haqidagi ma’lumotlar esa berilgan arizaga muvofiq yoziladi. Bunda yolg'iz onaning arizasi talab etilmaydi.",
+  "paternityNoProxy": "Otalikni ishonchnomaga binoan belgilashga yo'l qo'yilmaydi.",
+  "civilMarriage": "Agar ota-onalar fuqarolik nikohida turgan bo'lsalar (bolaga otalikni belgilangan holda), ota-onaning ikkalasi ham konsulxonaga kelishi shart:",
+  "civilList": [
+    "Bola onasining yoki otasining arizasi;",
+    "Ota va onaning birgalikdagi otalikni belgilash to'g'risidagi arizasi (o'rnatilgan shakli konsuldan olinadi);",
+    "Tibbiy muassasaning farzand tug'ilganligi to'g'risidagi ma’lumotnomasi asl nusxasi;",
+    "Bola ota-onasining pasportlari;",
+    "Agar bolaning ota-onasidan biri xorijiy davlat fuqarosi bo'lsa, bolaning xorijiy davlat fuqarosi bo'lgan otasining (yoki onasining) O'zbekiston Respublikasining tug'ilganlik guvohnomasini rasmiylashtirish, hamda O'zbekiston Respublikasi fuqaroligini olish uchun notarial tasdiqlangan roziligini ham taqdim etish shart."
+  ],
+  "singleMother": "Agar bolaning onasi yolg'iz bo'lsa (bolaga nisbatan otalik belgilanmagan holda), konsulxonaga ona kelishi shart:",
+  "singleList": [
+    "Bola onasining arizasi (o'rnatilgan shakli konsuldan olinadi).",
+    "Tibbiy muassasaning farzand tug'ilganligi to'g'risidagi ma’lumotnomasi asl nusxasi.",
+    "Bola onasining pasporti."
+  ]
+}

@@ -100,7 +100,7 @@ export const getMenuItems = (
       { title: t("documentRequestProcedure"), href: "/page/369" },
       {
         title: t("birthCertificatePaternity"),
-        href: "/page/370",
+        href: `/${lng}/birth-certificate-paternity`,
       },
       { title: t("eVisaPortal"), href: "https://e-visa.gov.uz/main" },
     ],
