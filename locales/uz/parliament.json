@@ -1,0 +1,15 @@
+{
+  "title": "Oliy Majlis (Parlament)",
+  "subtitle": "O'zbekiston Respublikasi Oliy Majlisi haqida umumiy ma'lumot",
+  "intro": "O'zbekiston Respublikasining Oliy Majlisi oliy davlat vakillik organi bo'lib, qonun chiqaruvchi hokimiyatni amalga oshiradi. Oliy Majlis ikki palatadan — Qonunchilik palatasi va Senatdan iborat bo'lib, ularning vakolat muddati besh yilni tashkil etadi.",
+  "structureTitle": "To'liq tuzilma va vakolatlar",
+  "structureParagraph1": "Qonunchilik palatasi qonunga muvofiq saylanadigan 150 deputatdan iborat. Senat hududiy vakillik palatasi hisoblanadi: Qoraqalpog'iston, viloyatlar va Toshkent shahridan senatorlar saylanadi; shuningdek, Senatning 16 nafar a'zosi ilm-fan, madaniyat, ishlab chiqarish va boshqalarda tajribaga ega bo'lgan shaxslar orasidan tayinlanadi.",
+  "jointPowersTitle": "Palatalarning birgalikdagi vakolatlari",
+  "jointPowers": "Konstitutsiya qabul qilish, unga o'zgartish va qo'shimchalar kiritish\nKonstitutsiyaviy qonunlar va qonunlarni qabul qilish\nReferendum o'tkazish to'g'risida qaror qabul qilish\nIchki va tashqi siyosat yo'nalishlarini belgilash va strategik dasturlarni qabul qilish\nDavlat byudjetini qabul qilish va ijrosini nazorat qilish\nSoliqlar va boshqa majburiy to'lovlarni joriy qilish\nMa'muriy-hududiy tuzilishni qonun yo'li bilan tartibga solish\nXalqaro shartnomalarni ratifikatsiya qilish",
+  "chamberPowersTitle": "Qonunchilik palatasining mutlaq vakolatlari",
+  "chamberPowers": "Spiker va uning o'rinbosarlarini saylash\nDeputatning daxlsizlik huquqini bekor qilish masalalarini ko'rib chiqish\nPalataning ichki tartibini belgilash\nDavlat siyosati bo'yicha muhim qarorlar qabul qilish",
+  "senatePowersTitle": "Senatning mutlaq vakolatlari",
+  "senatePowers": "Senat Raisini va uning o'rinbosarlarini saylash\nKonstitutsiyaviy sud va Oliy sud a'zolarini prezident taqdimiga binoan saylash\nMarkaziy bank boshqaruvini, Bosh prokuror va boshqa rahbarlarni tasdiqlash\nAmnistiya to'g'risidagi hujjatlarni ko'rib chiqish va tasdiqlash",
+  "initiativeTitle": "Qonunchilik tashabbusi",
+  "initiativeText": "Qonunchilik tashabbusi huquqi O‘zbekiston Respublikasi Prezidenti, Qoraqalpog‘iston Respublikasi, Qonunchilik palatasi deputatlari, Vazirlar Mahkamasi, Konstitutsiyaviy va Oliy sudlar, Bosh prokuror va boshqa qonun loyihasi sub'ektlariga tegishli."
+}
