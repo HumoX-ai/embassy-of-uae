@@ -36,6 +36,10 @@ export async function generateMetadata({
   return {
     title: titles[validLng] || titles.en,
     description: descriptions[validLng] || descriptions.en,
+    keywords:
+      validLng === "uz"
+        ? "O'zbekiston, Parlament, Oliy Majlis, qonunchilik, vakolatlar, Senat, Qonunchilik palatasi"
+        : "Uzbekistan, Parliament, Oliy Majlis, legislation, powers, Senate, Legislative Chamber",
     openGraph: {
       title: titles[validLng] || titles.en,
       description: descriptions[validLng] || descriptions.en,
