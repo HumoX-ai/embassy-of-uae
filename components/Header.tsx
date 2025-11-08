@@ -83,6 +83,7 @@ export default function Header({ lng }: HeaderProps) {
             width={40}
             height={40}
             className="h-10 w-10"
+            unoptimized
           />
           <div className="hidden xl:block">
             <h1 className="text-sm xl:text-base 2xl:text-lg font-semibold leading-tight">
@@ -140,6 +141,7 @@ export default function Header({ lng }: HeaderProps) {
                       width={32}
                       height={32}
                       className="h-8 w-8"
+                      unoptimized
                     />
                     <div>
                       <h2 className="text-sm font-semibold">
