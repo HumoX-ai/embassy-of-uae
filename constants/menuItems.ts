@@ -24,7 +24,7 @@ export const getMenuItems = (
     subItems: [
       { title: t("generalInfo"), href: `/${lng}/uzbekistan` },
       { title: t("parliament"), href: `/${lng}/parliament` },
-      { title: t("stateSymbols"), href: "/page/2540" },
+      { title: t("stateSymbols"), href: `/${lng}/state-symbols` },
       { title: t("nationalHolidays"), href: "/page/2542" },
       { title: t("uzbekCulture"), href: "/page/2543" },
       { title: t("tourismPotential"), href: "/page/2544" },
