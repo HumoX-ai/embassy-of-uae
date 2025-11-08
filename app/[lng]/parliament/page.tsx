@@ -47,7 +47,7 @@ export async function generateMetadata({
       locale: validLng === "uz" ? "uz_UZ" : "en_US",
       images: [
         {
-          url: "/oliy_majlis.jpg",
+          url: "https://uzbekistan.org/wp-content/uploads/2023/05/oliy_mazhlis.jpg",
           width: 1200,
           height: 630,
           alt:
@@ -61,7 +61,9 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: titles[validLng] || titles.en,
       description: descriptions[validLng] || descriptions.en,
-      images: ["/oliy_majlis.jpg"],
+      images: [
+        "https://uzbekistan.org/wp-content/uploads/2023/05/oliy_mazhlis.jpg",
+      ],
     },
   };
 }
