@@ -1,0 +1,71 @@
+{
+  "pageTitle": "O'zbek madaniyati",
+  "pageSubtitle": "Sharqning eng yorqin va o'ziga xos madaniyatlaridan biri",
+  "introText": "O'zbekiston madaniyati Sharqning eng yorqin va o'ziga xos madaniyatidan biridir. Bu - beqiyos xalq ijodiyoti, raqsi va rassomchilik, betakror milliy oshxona va kiyim-kechakdir.",
+
+  "folkArtTitle": "Xalq ijodiyoti va musiqasi",
+  "folkArtDescription1": "O'zbek xalq ijodiyotining san'ati ko'pqirrali tematika va xilma-xil janri bilan tavsiflanadi. O'z vazifalari va shakllariga muvofiq ashula va cholg'u asbob kuylari ikki guruhdan iborat: belgilangan vaqt va vaziyatlarda ijro etuvchi va har qanday vaqtda ijro etuvchi.",
+  "folkArtDescription2": "Birinchi guruhga urf-odat, mehnat jarayoni, turli marosimlar, sahnalashtirilgan tomosha namoyishlari va o'yinlarga tegishli bo'lgan ashulalar kiradi.",
+  "folkArtDescription3": "O'zbek xalqi o'z musiqasi bilan mashhurdir. Qo'shiq — she'riy matnning bir yoki ikki baytni qamrab oluvchi katta bo'lmagan kuy bilan tuzilgan kuplet ashulasidir.",
+
+  "musicTypesTitle": "Musiqa turlari",
+  "musicTypesDescription1": "Qo'shiq turlari bilan bir qatorda kupletli tuzilgan ashulalar bo'lgan \"lapar\" hamda \"yalla\" san'ati mavjud. Maskur kuyning raqsga tushuvchi san'atining janri xazil raqsni ijro etishda ko'zda tutilgan. Lapar — bu ashula so'zlashuvidir.",
+  "musicTypesDescription2": "Qo'shiqlarning she'riy matnlarida Sharq shoirlarining xalq va kasbiy she'riyatlari qo'llaniladi. Ashulalarning yanada rivojlangan namunalari mohiyati bo'yicha og'zaki urf-odatlarning professional musiqasi hisoblanadi. O'zbek musiqiy meroslaridagi asosiy joyini - badiiy nutq tarzida hikoya rivoyatlarni ifodali etuvchi - doston asari egallaydi.",
+
+  "danceTitle": "O'zbek xalq raqs maktabi va uslublari",
+  "danceDescription1": "Raqslar O'zbekistonning turli hududlarida bir-biridan farq qiladi. Farg'ona raqsi o'zgacha mayinligi, harakatlarning ravonligi va ifodaliligi, siljish qadamlarining engilligi, joylarda va aylanishlarda o'ziga xos harakatlari bilan ajralib turadi. Xorazm va Buxoro viloyatlarda qayroqlar bilan raqsga tushiladi.",
+  "danceDescription2": "Har bir o'zbek raqs maktabining o'zi bir olam. Farg'ona raqslari goh sho'x va tetik, goh mayin oquvchi harakat, gavdani bir oz oldinga egib erkin, nafis tutish, xilma-xil ma'no kashf etuvchi chiroyli qo'l harakatlariga xos bo'lgan.",
+
+  "danceSchoolsTitle": "Raqs maktablari va zamonaviy rivojlanish",
+  "danceSchoolsDescription": "XX-asrning 20-yillarida xalq raqslarining sahna variantlari yuzaga kela boshladi. \"Qarinavо\", \"Sadr\", \"Dilxirоj\", \"Gul o'yin\", \"Munоjоt\" kabi an'anaviy raqslar yangicha uslublar bilan boyigan holda zamonaviy jarangladi. \"Pilla\", \"Paxta\" kabi xalq mehnatini ulug'lovchi raqslar dunyoga keldi. Mustaqillik sharofati bilan \"O'zbekraqs\" birlashmasi tasarrufida yangi raqs guruhlari tuzildi. Har yili o'tadigan Mustaqillik va Navro'z bayramlarida va xalqaro anjumanlarda raqs san'ati markaziy o'rinni egallaydi.",
+
+  "paintingTitle": "Milliy rassomlik san'ati",
+  "paintingDescription1": "Milliy rassomlik san'atning rivojlanishi ko'p asrlardan oldin boshlangan. XVI–XVII asrlarda Buxoro poytaxtida va boshqa shahar markazlarida qo'lyozma san'ati va muvoqalash ishlari sezilarli darajada muvaffaqiyatlarga erishdi.",
+  "paintingDescription2": "Qadimgi qo'lyozmalarning badiiy bezashlari nafis kalligrafiyani, maydonlarda suv bo'yoqlari orqali ingichka ornamentlarni bajarishni o'z ichiga olgan. Ushbu san'atda bir necha yo'nalishlarning uslublari rivojlangan. Ulardan biri Behzod (o'rta asrning rassomi, sharq miniaturasi yo'nalishlarining asoschisidan biri) urf-odati bilan bog'langan.",
+
+  "clothingTitle": "Milliy o'zbek kiyim-kechagi",
+  "clothingDescription1": "Mahalliy aholining o'ziga xos kiyim-kechagi qadimdan iqlimi, uy-ro'zg'or sharoiti, urug'-aymoqlari urf-odatlariga bo'yicha aniqlangan. XIX asrdayoq kiyim-kechaklar (xalatlar, ko'ylaklar va erkaklar ko'ylaklari): keng va uzun bichilgan, elkadan tushmaydigan, qad-qomatni yashirib turadigan barcha belgilar saqlanib kelingan.",
+  "clothingDescription2": "Milliy bayram ko'ylaklari qo'llanilgan matolarning va kashtalarning chiroyi va boyligidan kundalik ko'ylaklardan ajralib turadi.",
+
+  "mensClothingTitle": "Erkaklar kiyimi",
+  "mensClothingDescription": "An'anaviy erkaklar milliy kiyimlari qiyiqcha bilan bog'langan qavilgan issiq cho'ponlardan, boshkiyimi - do'ppidan va nozik charmdan yasatilgan etiklardan iborat. Erkaklar tekis andazali ichki va tashqi ko'ylaklarni kiyganlar. Cho'ponlarning yengil yoki paxtada qavilgan issiq turlari mavjud.",
+
+  "womensClothingTitle": "Ayollar kiyimi",
+  "womensClothingDescription": "Ayollarning milliy kiyimlari xalat, xon-atlasdan tikilgan oddiy bichimli ko'ylaklar, lozimlar — pastki qismi tor bo'lgan keng yupqa shimdan iborat. Ayollarning bosh kiyimi asosiy uch belgidan iborat: shapkacha, ro'mol va do'ppi. Ayollarning bayram ko'ylaklari matolarning to'kilib turishidan va chiroyidan ajralib turadi.",
+
+  "doppiTitle": "Do'ppi - milliy bosh kiyimi",
+  "doppiDescription1": "O'zbekistonning taniqli va keng tarqalgan xalq san'atidan biri Do'ppidir. Do'ppi — bosh kiyimi hisoblanib, astarli yumshoq matolardan tikilgan. Do'ppi o'zbek milliy kiyimining ajralmas qismi bo'lib, o'zbek millatining o'z milliy an'ana va urf-odatlariga kirdi.",
+  "doppiDescription2": "O'zbek do'ppisining keng tarqalgan shakllaridan: to'rtqirrali va konussimondir. Do'ppilar uchun oq surp, oq ipakli ip, jiyak, tepchish uchun oddiy ipdan tayyorlanadi. Aksariyat ayollar do'ppido'zlik sirlarini mohirlik bilan egallaganlar.",
+  "doppiDescription3": "Do'ppilarni bezashda hayot va hosildorlik ramzi bo'lgan \"bodom\" ko'p uchraydigan bodom belgisida qo'l solish turlariga kiradi. Geometrik naqshlar yanada taniqliroq naqshlar bo'lgan. Turli tumanlarda yaratilgan do'ppilar, o'z shakli, turi va gul tushirish yo'llari bilan ajralib turadi.",
+
+  "cuisineTitle": "Milliy taomlar",
+  "cuisineIntro": "O'zbek oshxonasi Sharqda xilma-xilligi bilan mashhur. O'zbek taomlarining ayrim tayyorlanishlari ko'pasirlik tarixga ega. Har bir taom o'ziga xos milliy urf-odat va tayyorlash usullariga ega. Taomlar, ichimliklar va qandolat mahsulotlarni tayyorlashning turli usullari 1000ga yaqindir.",
+
+  "plovTitle": "Osh (Plov)",
+  "plovDescription": "Osh — O'zbekistonning eng mashhur taomidir. Ushbu taom ham kundalik ham bayramona taom hisoblanadi. To'y, o'tirishlar va tug'ilgan kunlar ushbu milliy taomsiz o'tmaydi. Oshning asosiy tarkibi guruch, go'sht, sabzi va boshqa mahsulotlar hisoblanadi.",
+
+  "nonTitle": "Non - muqaddas taom",
+  "nonDescription": "Non - o'zbek xalqi uchun muqaddasdir. Urf-odatlarga muvofiq safarga ketayotgan kimsa nondan bir bo'lagini tishlasa, qaytib kelgunga va yegunga qadar ushbu nonni saqlash kerak. Non savati bilan boshda ko'tariladigan urf-odat ham nonga bo'lgan munosabatda ko'rsatilayotgan katta hurmat misolidir. Ko'p asrlar mobaynida nonvoylar nonni tandirda yopadilar, natijada non guruch-guruch va mazali bo'ladi.",
+
+  "shurvaTitle": "Sho'rva",
+  "shurvaDescription": "O'zbekistonning milliy oshxonasida sho'rva asosiy o'rinni egallaydi. Ushbu taomlar sabzi, lavlagi hamda piyoz va ko'katlar kabi sabzavotlarga boydir. Sho'rvalarning eng mashhurlari — bu mastava va qaynatma sho'rvadir.",
+
+  "halvaTitle": "Xalva",
+  "halvaDescription": "Xalva – bug'doy uni, yong'oq bilan shakar va sedanadan tayyorlanadigan butun jahonda tanilgan sharq lazatidan biridir. O'zbekistonda xalvalarning 50ga yaqin turli xillari mavjud.",
+
+  "otherDishesTitle": "Boshqa taomlar",
+  "otherDishesDescription1": "Ot go'shtidan tayyorlangan \"qazi\" - o'zbek gazaklarining eng mashkhurlaridan biridir. Kabob va somsa (tandirda yopiladigan qatlam hamirli milliy pishiriq) O'zbek oshxonasining eng taniqli taomlaridan hisoblanadi.",
+  "otherDishesDescription2": "Bundan tashqari, O'zbekiston meva, uzum, qovun va tarvuzdan tayyorlangan o'z mazali sharbatlari bilan mashhur. Shuningdek, O'zbekiston katta miqdordagi turli quruq mevalar, yong'oqlar va bodomlarga boy.",
+
+  "handicraftsTitle": "Milliy hunarmandchilik",
+  "handicraftsDescription1": "Mustaqillik yillarida O'zbekistonda barcha sohalar qatori milliy hunarmandchilikning unutila boshlangan qadimiy an'analari va maktablari qayta tiklanib, rivojlanib hamda boyib bormoqda.",
+  "handicraftsDescription2": "Usta-hunarmandlarning mehnatini munosib rag'batlantirish va ularni har tomonlama qo'llab-quvvatlashga qaratilayotgan alohida e'tibor xalq badiiy hunarmandchiligi va amaliy san'ati an'analarining bardavomligiga xizmat qilmoqda.",
+  "handicraftsDescription3": "Joylarda \"Usta-shogird\" maktablari tashkil qilinib, intiluvchan yoshlarimizga xalq badiiy hunarmandchiligi va amaliy san'ati bo'yicha mahorat sirlari o'rgatilmoqda. Buning samarasida ajdodlar izidan borib, milliy qadriyatlarimizga sadoqat va ehtirom ruhida kamol topayotgan iste'dodli ustalar avlodi yetishib chiqmoqda.",
+
+  "famousCraftsTitle": "Mashhur hunarmandchilik mahsulotlari",
+  "craft1": "Marg'ilon shoyi-atlaslari va do'ppilari",
+  "craft2": "Xiva gilamlari",
+  "craft3": "Nurota kashtalari",
+  "craft4": "Buxoro zardo'zi buyumlari",
+  "craft5": "Qo'li gul ustalarimizning san'at asarlari"
+}

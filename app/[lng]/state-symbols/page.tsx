@@ -61,16 +61,17 @@ export default async function StateSymbolsPage({ params }: PageProps) {
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="py-16 md:py-24 bg-muted/20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-foreground">
-              {t("title")}
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-              {t("subtitle")}
-            </p>
-          </div>
+      <section className="relative h-[400px] md:h-[500px] flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-linear-to-br from-blue-600 via-blue-700 to-blue-900"></div>
+        <div className="absolute inset-0 bg-black/20"></div>
+
+        <div className="relative z-10 container mx-auto px-4 text-center text-primary-foreground">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 animate-fade-in leading-tight">
+            {t("title")}
+          </h1>
+          <p className="text-lg sm:text-xl md:text-2xl mb-6 md:mb-8 max-w-3xl mx-auto opacity-90 px-2">
+            {t("subtitle")}
+          </p>
         </div>
       </section>
 
