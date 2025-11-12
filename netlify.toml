@@ -8,9 +8,15 @@
 [build.environment]
   # Node version
   NODE_VERSION = "20"
+  
+# ✨ MUHIM O'ZGARTIRISH 1: SPA FALLBACKNI O'CHIRISH!
+# Ushbu [[redirects]] qismini to'liq o'chirib tashlang yoki sharhga oling.
+# Chunki u Next.js routingini buzadi.
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
 
-# SPA fallback for client-side routing
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# ✨ MUHIM O'ZGARTIRISH 2: NETLIFY NEXT.JS PLUGINNI QO'SHISH
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
