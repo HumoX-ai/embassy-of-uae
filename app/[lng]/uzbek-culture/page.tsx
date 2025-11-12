@@ -73,7 +73,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
       </section>
 
       {/* Introduction */}
-      <section className="py-12 md:py-16 bg-muted/30">
+      <section className="py-8 sm:py-12 md:py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center">
@@ -84,15 +84,15 @@ export default async function UzbekCulturePage({ params }: PageProps) {
       </section>
 
       {/* Folk Art and Music */}
-      <section className="py-12 md:py-20">
+      <section className="py-8 sm:py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12 text-foreground">
               {t("folkArtTitle")}
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
-              <div className="bg-card rounded-xl p-4 border border-border">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start mb-8 sm:mb-12">
+              <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
                 <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                   <Image
                     src="/uzbekistan/folk-music.jpg"
@@ -118,8 +118,8 @@ export default async function UzbekCulturePage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="bg-muted/50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">
+            <div className="bg-muted/50 rounded-xl p-4 sm:p-8">
+              <h3 className="text-2xl font-bold mb-4 sm:mb-6 text-foreground">
                 {t("musicTypesTitle")}
               </h3>
               <div className="space-y-4">
@@ -136,14 +136,14 @@ export default async function UzbekCulturePage({ params }: PageProps) {
       </section>
 
       {/* Dance */}
-      <section className="py-12 md:py-20 bg-muted/30">
+      <section className="py-8 sm:py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12 text-foreground">
               {t("danceTitle")}
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start mb-8 sm:mb-12">
               <div className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed">
                   {t("danceDescription1")}
@@ -153,7 +153,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
                 </p>
               </div>
 
-              <div className="bg-card rounded-xl p-4 border border-border">
+              <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
                 <div className="aspect-video bg-muted rounded-lg flex items-center justify-center">
                   <Image
                     src="/uzbekistan/uzbek-dance.jpg"
@@ -167,8 +167,8 @@ export default async function UzbekCulturePage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="bg-card rounded-xl p-8 border border-border">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">
+            <div className="bg-card rounded-xl p-4 sm:p-8 border border-border">
+              <h3 className="text-2xl font-bold mb-4 sm:mb-6 text-foreground">
                 {t("danceSchoolsTitle")}
               </h3>
               <div className="space-y-4">
@@ -182,15 +182,15 @@ export default async function UzbekCulturePage({ params }: PageProps) {
       </section>
 
       {/* Painting and Arts */}
-      <section className="py-12 md:py-20">
+      <section className="py-8 sm:py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12 text-foreground">
               {t("paintingTitle")}
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12 items-start">
-              <div className="bg-card rounded-xl p-4 border border-border">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start">
+              <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
                 <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
                   <Image
                     src="/uzbekistan/miniature-art.jpg"
@@ -217,14 +217,14 @@ export default async function UzbekCulturePage({ params }: PageProps) {
       </section>
 
       {/* National Clothing */}
-      <section className="py-12 md:py-20 bg-muted/30">
+      <section className="py-8 sm:py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12 text-foreground">
               {t("clothingTitle")}
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start mb-8 sm:mb-12">
               <div className="space-y-6">
                 <p className="text-muted-foreground leading-relaxed">
                   {t("clothingDescription1")}
@@ -233,7 +233,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
                   {t("clothingDescription2")}
                 </p>
 
-                <div className="bg-card rounded-xl p-6 border border-border">
+                <div className="bg-card rounded-xl p-3 sm:p-6 border border-border">
                   <h3 className="text-xl font-bold mb-4 text-foreground">
                     {t("mensClothingTitle")}
                   </h3>
@@ -242,7 +242,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
                   </p>
                 </div>
 
-                <div className="bg-card rounded-xl p-6 border border-border">
+                <div className="bg-card rounded-xl p-3 sm:p-6 border border-border">
                   <h3 className="text-xl font-bold mb-4 text-foreground">
                     {t("womensClothingTitle")}
                   </h3>
@@ -252,7 +252,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
                 </div>
               </div>
 
-              <div className="bg-card rounded-xl p-4 border border-border">
+              <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
                 <div className="aspect-3/4 bg-muted rounded-lg flex items-center justify-center">
                   <Image
                     src="/uzbekistan/national-clothing.jpg"
@@ -267,8 +267,8 @@ export default async function UzbekCulturePage({ params }: PageProps) {
             </div>
 
             {/* Doppi Section */}
-            <div className="bg-card rounded-xl p-8 border border-border">
-              <div className="grid md:grid-cols-2 gap-8 items-start">
+            <div className="bg-card rounded-xl p-4 sm:p-8 border border-border">
+              <div className="grid md:grid-cols-2 gap-6 sm:gap-8 items-start">
                 <div className="space-y-4">
                   <h3 className="text-2xl font-bold text-foreground">
                     {t("doppiTitle")}
@@ -301,20 +301,20 @@ export default async function UzbekCulturePage({ params }: PageProps) {
       </section>
 
       {/* National Cuisine */}
-      <section className="py-12 md:py-20">
+      <section className="py-8 sm:py-12 md:py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12 text-foreground">
               {t("cuisineTitle")}
             </h2>
 
-            <div className="mb-12">
+            <div className="mb-8 sm:mb-12">
               <p className="text-lg text-muted-foreground leading-relaxed text-center max-w-4xl mx-auto">
                 {t("cuisineIntro")}
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-8 mb-8 sm:mb-12">
               {/* Plov */}
               <div className="bg-card rounded-xl overflow-hidden border border-border">
                 <div className="aspect-video bg-muted">
@@ -327,7 +327,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
                     unoptimized
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-3 sm:p-6">
                   <h3 className="text-2xl font-bold mb-4 text-foreground">
                     {t("plovTitle")}
                   </h3>
@@ -349,7 +349,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
                     unoptimized
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-3 sm:p-6">
                   <h3 className="text-2xl font-bold mb-4 text-foreground">
                     {t("nonTitle")}
                   </h3>
@@ -371,7 +371,7 @@ export default async function UzbekCulturePage({ params }: PageProps) {
                     unoptimized
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-3 sm:p-6">
                   <h3 className="text-2xl font-bold mb-4 text-foreground">
                     {t("halvaTitle")}
                   </h3>
@@ -382,8 +382,8 @@ export default async function UzbekCulturePage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="bg-muted/50 rounded-xl p-8">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">
+            <div className="bg-muted/50 rounded-xl p-4 sm:p-8">
+              <h3 className="text-2xl font-bold mb-4 sm:mb-6 text-foreground">
                 {t("otherDishesTitle")}
               </h3>
               <div className="space-y-4">
@@ -400,15 +400,15 @@ export default async function UzbekCulturePage({ params }: PageProps) {
       </section>
 
       {/* Handicrafts */}
-      <section className="py-12 md:py-20 bg-muted/30">
+      <section className="py-8 sm:py-12 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 sm:mb-12 text-foreground">
               {t("handicraftsTitle")}
             </h2>
 
-            <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
-              <div className="bg-card rounded-xl p-4 border border-border">
+            <div className="grid md:grid-cols-2 gap-6 sm:gap-12 items-start mb-8 sm:mb-12">
+              <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
                 <div className="aspect-square bg-muted rounded-lg flex items-center justify-center">
                   <Image
                     src="/uzbekistan/handicrafts.jpg"
@@ -434,11 +434,11 @@ export default async function UzbekCulturePage({ params }: PageProps) {
               </div>
             </div>
 
-            <div className="bg-card rounded-xl p-8 border border-border">
-              <h3 className="text-2xl font-bold mb-6 text-foreground">
+            <div className="bg-card rounded-xl p-4 sm:p-8 border border-border">
+              <h3 className="text-2xl font-bold mb-4 sm:mb-6 text-foreground">
                 {t("famousCraftsTitle")}
               </h3>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 gap-4 sm:gap-6">
                 <div className="space-y-3">
                   <div className="flex items-start gap-3">
                     <span className="text-primary font-bold text-lg">•</span>

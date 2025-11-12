@@ -27,7 +27,7 @@ export const getMenuItems = (
       { title: t("stateSymbols"), href: `/${lng}/state-symbols` },
       { title: t("nationalHolidays"), href: `/${lng}/national-holidays` },
       { title: t("uzbekCulture"), href: `/${lng}/uzbek-culture` },
-      { title: t("tourismPotential"), href: "/page/2544" },
+      { title: t("tourismPotential"), href: `/${lng}/tourism-potential` },
     ],
     width: "300px",
   },
