@@ -96,7 +96,6 @@ export default async function ParliamentPage({ params }: PageProps) {
                 alt={t("title")}
                 fill
                 className="object-cover"
-                unoptimized
               />
               <div className="absolute inset-0 bg-linear-to-b from-black/30 to-black/40"></div>
               <div className="relative z-10 p-6 md:p-10 text-white">

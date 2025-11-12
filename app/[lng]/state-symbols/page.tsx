@@ -101,7 +101,6 @@ export default async function StateSymbolsPage({ params }: PageProps) {
                     width={400}
                     height={400}
                     className="object-contain w-full h-full p-8"
-                    unoptimized
                   />
                 </div>
               </div>
@@ -181,7 +180,6 @@ export default async function StateSymbolsPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-contain w-full h-full p-4"
-                    unoptimized
                   />
                 </div>
               </div>
@@ -216,7 +214,6 @@ export default async function StateSymbolsPage({ params }: PageProps) {
                     width={400}
                     height={300}
                     className="object-contain w-full h-full p-4 lg:p-8"
-                    unoptimized
                   />
                 </div>
 

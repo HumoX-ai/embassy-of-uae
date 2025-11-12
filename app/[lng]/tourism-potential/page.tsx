@@ -103,7 +103,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full rounded-lg"
-                    unoptimized
                   />
                 </div>
               </div>
@@ -152,7 +151,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                       width={600}
                       height={400}
                       className="object-cover w-full h-full rounded-lg"
-                      unoptimized
                     />
                   </div>
                 </div>
@@ -168,7 +166,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                       width={600}
                       height={400}
                       className="object-cover w-full h-full rounded-lg"
-                      unoptimized
                     />
                   </div>
                 </div>
@@ -211,7 +208,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                       width={600}
                       height={400}
                       className="object-cover w-full h-full rounded-lg"
-                      unoptimized
                     />
                   </div>
                 </div>
@@ -227,7 +223,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                       width={600}
                       height={400}
                       className="object-cover w-full h-full rounded-lg"
-                      unoptimized
                     />
                   </div>
                 </div>
@@ -267,7 +262,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                       width={600}
                       height={400}
                       className="object-cover w-full h-full rounded-lg"
-                      unoptimized
                     />
                   </div>
                 </div>
@@ -283,7 +277,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                       width={600}
                       height={400}
                       className="object-cover w-full h-full rounded-lg"
-                      unoptimized
                     />
                   </div>
                 </div>
@@ -322,7 +315,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full rounded-lg"
-                    unoptimized
                   />
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -345,7 +337,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full rounded-lg"
-                    unoptimized
                   />
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -378,7 +369,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="p-3 sm:p-6">
@@ -400,7 +390,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="p-3 sm:p-6">
@@ -422,7 +411,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="p-3 sm:p-6">
@@ -444,7 +432,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="p-3 sm:p-6">
@@ -466,7 +453,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="p-3 sm:p-6">
@@ -488,7 +474,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full"
-                    unoptimized
                   />
                 </div>
                 <div className="p-3 sm:p-6">
@@ -522,7 +507,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full rounded-lg"
-                    unoptimized
                   />
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
@@ -545,7 +529,6 @@ export default async function TourismPotentialPage({ params }: PageProps) {
                     width={600}
                     height={400}
                     className="object-cover w-full h-full rounded-lg"
-                    unoptimized
                   />
                 </div>
                 <p className="text-muted-foreground leading-relaxed mb-4">
