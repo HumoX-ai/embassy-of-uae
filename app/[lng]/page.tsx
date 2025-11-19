@@ -57,9 +57,22 @@ export default async function Home({ params }: PageProps) {
   const { t } = await useTranslation(validLng, "common");
 
   return (
-    <div className="min-h-screen relative">
-      {/* Background Registan Lion */}
-      <div className="absolute inset-0 bg-[url('/symbols/registan-lion.png')] bg-no-repeat bg-right bg-contain opacity-10 z-[-1] pointer-events-none"></div>
+    <div className="min-h-screen">
+      {/* Hero Section */}
+      {/* <div className="bg-linear-to-br from-primary/5 via-background to-primary/10">
+        <div className="container mx-auto px-4 py-16 md:py-24">
+          <div className="max-w-3xl mx-auto text-center space-y-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              {t("welcome")}
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground">
+              {lng === "uz"
+                ? "O'zbekiston Respublikasining Birlashgan Arab Amirliklaridagi Elchixonasi"
+                : "Embassy of the Republic of Uzbekistan in the United Arab Emirates"}
+            </p>
+          </div>
+        </div>
+      </div> */}
 
       {/* News Section */}
       <NewsSection lng={validLng} t={t} />

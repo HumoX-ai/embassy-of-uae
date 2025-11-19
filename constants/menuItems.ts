@@ -11,7 +11,10 @@ export type MenuItem = {
   width?: string;
 };
 
-export const getMenuItems = (lng: string, t: (key: string) => string): MenuItem[] => [
+export const getMenuItems = (
+  lng: string,
+  t: (key: string) => string
+): MenuItem[] => [
   {
     title: t("home"),
     href: `/${lng}`,
@@ -108,7 +111,7 @@ export const getMenuItems = (lng: string, t: (key: string) => string): MenuItem[
     title: t("embassyMenu"),
     subItems: [
       { title: t("ambassador"), href: "/page/360" },
-      { title: t("ambassadorMessage"), href: "/page/361" },
+      { title: t("ambassadorMessage"), href: `/${lng}/ambassador-message` },
       {
         title: t("embassyTeam"),
         href: "/page/363",
