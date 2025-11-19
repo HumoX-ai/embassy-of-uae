@@ -11,10 +11,7 @@ export type MenuItem = {
   width?: string;
 };
 
-export const getMenuItems = (
-  lng: string,
-  t: (key: string) => string
-): MenuItem[] => [
+export const getMenuItems = (lng: string, t: (key: string) => string): MenuItem[] => [
   {
     title: t("home"),
     href: `/${lng}`,
@@ -54,11 +51,11 @@ export const getMenuItems = (
     subItems: [
       {
         title: t("investInUzbekistan"),
-        href: "https://invest.gov.uz/uzipa/?lang=en",
+        href: "https://invest.gov.uz/",
       },
       {
         title: t("investmentPotential"),
-        href: "https://invest.gov.uz/investor-taxonomy/potential/",
+        href: "https://invest.gov.uz/uz/guide/explore",
       },
       { title: t("investmentCooperation"), href: "/page/2536" },
     ],
