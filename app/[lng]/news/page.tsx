@@ -3,10 +3,10 @@ import { Metadata } from "next";
 import Link from "next/link";
 
 import NewsCard from "@/components/features/news/ui/NewsCard";
+import { Button } from "@/components/ui/button";
 import { useTranslation } from "@/i18n";
 import { Language, languages, fallbackLng } from "@/i18n/settings";
 import { fetchArticles, articleToNewsItem } from "@/lib/api/news";
-import { Button } from "@/components/ui/button";
 
 type PageProps = {
   params: Promise<{ lng: string }>;
