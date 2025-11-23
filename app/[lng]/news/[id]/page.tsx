@@ -5,8 +5,12 @@ import { notFound } from "next/navigation";
 
 import RelatedNewsCard from "@/components/features/news/ui/RelatedNewsCard";
 import ShareButton from "@/components/features/news/ui/ShareButton";
-import { mockNewsEn, mockNewsUz } from "@/data/mockNews";
 import { Language, languages, fallbackLng } from "@/i18n/settings";
+import {
+  fetchArticleById,
+  fetchArticles,
+  articleToNewsItem,
+} from "@/lib/api/news";
 
 type PageProps = {
   params: Promise<{ lng: string; id: string }>;
@@ -22,55 +26,65 @@ export async function generateMetadata({
     ? (lng as Language)
     : fallbackLng;
 
-  const newsData = validLng === "uz" ? mockNewsUz : mockNewsEn;
-  const news = newsData.find((item) => item.id === id);
+  try {
+    const articleId = parseInt(id);
+    if (isNaN(articleId)) {
+      return {
+        title: validLng === "uz" ? "Yangilik topilmadi" : "News Not Found",
+      };
+    }
 
-  if (!news) {
+    const article = await fetchArticleById(articleId);
+    const news = articleToNewsItem(article);
+
+    const title = `${news.title} | ${
+      validLng === "uz"
+        ? "O'zbekiston Elchixonasi BAA"
+        : "Embassy of Uzbekistan in UAE"
+    }`;
+    const description =
+      news.excerpt ||
+      (validLng === "uz"
+        ? "O'zbekiston elchixonasidan yangilik"
+        : "News from Uzbekistan Embassy");
+
+    return {
+      title,
+      description,
+      keywords: `${news.category}, ${
+        validLng === "uz"
+          ? "O'zbekiston yangiliklari, BAA, diplomatik"
+          : "Uzbekistan news, UAE, diplomatic"
+      }`,
+      openGraph: {
+        title,
+        description,
+        type: "article",
+        locale: validLng === "uz" ? "uz_UZ" : "en_US",
+        images: news.image
+          ? [
+              {
+                url: news.image,
+                width: 1200,
+                height: 630,
+                alt: news.title,
+              },
+            ]
+          : [],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title,
+        description,
+        images: news.image ? [news.image] : [],
+      },
+    };
+  } catch (error) {
+    console.error("Error generating metadata:", error);
     return {
       title: validLng === "uz" ? "Yangilik topilmadi" : "News Not Found",
     };
   }
-
-  const title = `${news.title} | ${
-    validLng === "uz"
-      ? "O'zbekiston Elchixonasi BAA"
-      : "Embassy of Uzbekistan in UAE"
-  }`;
-  const description =
-    news.excerpt ||
-    (validLng === "uz"
-      ? "O'zbekiston elchixonasidan yangilik"
-      : "News from Uzbekistan Embassy");
-
-  return {
-    title,
-    description,
-    keywords: `${news.category}, ${
-      validLng === "uz"
-        ? "O'zbekiston yangiliklari, BAA, diplomatik"
-        : "Uzbekistan news, UAE, diplomatic"
-    }`,
-    openGraph: {
-      title,
-      description,
-      type: "article",
-      locale: validLng === "uz" ? "uz_UZ" : "en_US",
-      images: [
-        {
-          url: news.image,
-          width: 1200,
-          height: 630,
-          alt: news.title,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title,
-      description,
-      images: [news.image],
-    },
-  };
 }
 
 export default async function NewsDetailPage({ params }: PageProps) {
@@ -81,15 +95,35 @@ export default async function NewsDetailPage({ params }: PageProps) {
     ? (lng as Language)
     : fallbackLng;
 
-  const newsData = validLng === "uz" ? mockNewsUz : mockNewsEn;
-  const news = newsData.find((item) => item.id === id);
-
-  if (!news) {
+  // Parse and validate article ID
+  const articleId = parseInt(id);
+  if (isNaN(articleId)) {
     notFound();
   }
 
-  // Get related news (exclude current one)
-  const relatedNews = newsData.filter((item) => item.id !== id).slice(0, 3);
+  // Fetch article from API
+  let article;
+  let news;
+  try {
+    article = await fetchArticleById(articleId);
+    news = articleToNewsItem(article);
+  } catch (error) {
+    console.error(`Error fetching article ${articleId}:`, error);
+    notFound();
+  }
+
+  // Get related news (fetch latest articles)
+  let relatedNews: ReturnType<typeof articleToNewsItem>[] = [];
+  try {
+    const articlesResponse = await fetchArticles(1, 4);
+    relatedNews = articlesResponse.content
+      .filter((item) => item.id !== articleId)
+      .slice(0, 3)
+      .map(articleToNewsItem);
+  } catch (error) {
+    console.error("Error fetching related news:", error);
+    // Continue without related news
+  }
 
   const formattedDate = new Date(news.date).toLocaleDateString(
     validLng === "uz" ? "uz-UZ" : "en-US",
@@ -175,7 +209,7 @@ export default async function NewsDetailPage({ params }: PageProps) {
 
               {/* Content */}
               <div
-                className="prose prose-lg max-w-none
+                className="news-content prose prose-lg max-w-none
                   prose-headings:font-bold prose-headings:text-foreground
                   prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4
                   prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3

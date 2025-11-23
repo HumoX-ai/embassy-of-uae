@@ -1,8 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 
-import { mockNewsEn, mockNewsUz } from "@/data/mockNews";
 import { Language } from "@/i18n/settings";
+import { fetchArticles, articleToNewsItem } from "@/lib/api/news";
 
 import NewsCard from "./NewsCard";
 
@@ -11,9 +11,18 @@ interface NewsSectionProps {
   t: (key: string) => string;
 }
 
-export default function NewsSection({ lng, t }: NewsSectionProps) {
-  const newsData = lng === "uz" ? mockNewsUz : mockNewsEn;
-  const latestNews = newsData.slice(0, 4); // Get 4 latest news
+export default async function NewsSection({ lng, t }: NewsSectionProps) {
+  // Fetch latest 4 articles from API
+  let latestNews: ReturnType<typeof articleToNewsItem>[] = [];
+
+  try {
+    const articlesResponse = await fetchArticles(1, 4);
+    latestNews = articlesResponse.content.map(articleToNewsItem);
+  } catch (error) {
+    console.error("Failed to fetch articles for home page:", error);
+    // Continue with empty array - component will handle empty state
+  }
+
   const featuredNews = latestNews[0]; // First one is featured
   const otherNews = latestNews.slice(1, 4); // Next 3
 
@@ -37,19 +46,33 @@ export default function NewsSection({ lng, t }: NewsSectionProps) {
         </div>
 
         {/* News Grid */}
-        <div className="space-y-8">
-          {/* Featured News */}
-          <div>
-            <NewsCard news={featuredNews} lng={lng} featured />
-          </div>
+        {latestNews.length > 0 ? (
+          <div className="space-y-8">
+            {/* Featured News */}
+            {featuredNews && (
+              <div>
+                <NewsCard news={featuredNews} lng={lng} featured />
+              </div>
+            )}
 
-          {/* Other News Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {otherNews.map((news) => (
-              <NewsCard key={news.id} news={news} lng={lng} />
-            ))}
+            {/* Other News Grid */}
+            {otherNews.length > 0 && (
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {otherNews.map((news) => (
+                  <NewsCard key={news.id} news={news} lng={lng} />
+                ))}
+              </div>
+            )}
           </div>
-        </div>
+        ) : (
+          <div className="text-center py-12">
+            <p className="text-muted-foreground">
+              {lng === "uz"
+                ? "Hozircha yangiliklar mavjud emas"
+                : "No news available at the moment"}
+            </p>
+          </div>
+        )}
 
         {/* View All Button - Mobile */}
         <div className="mt-8 md:hidden">

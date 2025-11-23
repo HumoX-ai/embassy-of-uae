@@ -125,3 +125,9 @@
 .grayscale {
   filter: grayscale(100%);
 }
+
+.news-content,
+.news-content * {
+  background-color: transparent !important;
+  color: inherit !important;
+}
