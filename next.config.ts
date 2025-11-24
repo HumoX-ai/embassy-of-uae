@@ -29,9 +29,9 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "1f606894a151.ngrok-free.app",
+        hostname: "**.ngrok-free.app",
         port: "",
-        pathname: "/api/v1/article/get-image",
+        pathname: "/**",
       },
     ],
   },
