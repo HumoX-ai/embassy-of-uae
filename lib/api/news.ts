@@ -2,7 +2,7 @@ import { Article, ArticlesResponse } from "@/types/news";
 
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL ||
-  "https://c686e0f3d0fc.ngrok-free.app/api/v1";
+  "https://1f606894a151.ngrok-free.app/api/v1";
 
 /**
  * Fetches all articles with pagination
