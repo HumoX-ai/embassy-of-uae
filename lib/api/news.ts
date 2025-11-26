@@ -1,8 +1,7 @@
 import { Article, ArticlesResponse } from "@/types/news";
 
 const API_BASE_URL =
-  process.env.NEXT_PUBLIC_API_BASE_URL ||
-  "https://1f606894a151.ngrok-free.app/api/v1";
+  process.env.NEXT_PUBLIC_API_BASE_URL || "http://209.38.77.32:8090/api/v1";
 
 /**
  * Fetches all articles with pagination
@@ -22,9 +21,6 @@ export async function fetchArticles(
       {
         next: {
           revalidate: 300, // Revalidate every 5 minutes (300 seconds)
-        },
-        headers: {
-          "ngrok-skip-browser-warning": "true", // Required for ngrok
         },
       }
     );
@@ -51,9 +47,6 @@ export async function fetchArticleById(id: number): Promise<Article> {
     const response = await fetch(`${API_BASE_URL}/article/${id}`, {
       next: {
         revalidate: 300, // Revalidate every 5 minutes
-      },
-      headers: {
-        "ngrok-skip-browser-warning": "true", // Required for ngrok
       },
     });
 
