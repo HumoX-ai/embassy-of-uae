@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "api.uzembassy.ae",
         port: "",
-        pathname: "/**",
+        pathname: "/api/**",
       },
     ],
   },
