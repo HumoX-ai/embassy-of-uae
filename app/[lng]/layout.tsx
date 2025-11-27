@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist_Mono, Open_Sans } from "next/font/google";
-import NextTopLoader from "nextjs-toploader";
 import Script from "next/script";
+import NextTopLoader from "nextjs-toploader";
 
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
