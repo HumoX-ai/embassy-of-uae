@@ -1,11 +1,11 @@
-import { Metadata } from 'next'
+import { Metadata } from "next";
 
 export interface PageMetadataParams {
-  title: string
-  description: string
-  lng: string
-  path: string
-  keywords?: string[]
+  title: string;
+  description: string;
+  lng: string;
+  path: string;
+  keywords?: string[];
 }
 
 export function generatePageMetadata({
@@ -15,18 +15,13 @@ export function generatePageMetadata({
   path,
   keywords = [],
 }: PageMetadataParams): Metadata {
-  const baseUrl = 'https://uzembassy.ae'
-  const url = `${baseUrl}/${lng}${path}`
-  
+  const baseUrl = "https://uzembassy.ae";
+  const url = `${baseUrl}/${lng}${path}`;
+
   return {
     title,
     description,
-    keywords: [
-      'Uzbekistan Embassy',
-      'UAE',
-      'Embassy Services',
-      ...keywords,
-    ],
+    keywords: ["Uzbekistan Embassy", "UAE", "Embassy Services", ...keywords],
     alternates: {
       canonical: url,
       languages: {
@@ -38,14 +33,14 @@ export function generatePageMetadata({
       title,
       description,
       url,
-      siteName: 'Embassy of Uzbekistan in UAE',
-      locale: lng === 'uz' ? 'uz_UZ' : 'en_US',
-      type: 'website',
+      siteName: "Embassy of Uzbekistan in UAE",
+      locale: lng === "uz" ? "uz_UZ" : "en_US",
+      type: "website",
     },
     twitter: {
-      card: 'summary_large_image',
+      card: "summary_large_image",
       title,
       description,
     },
-  }
+  };
 }
