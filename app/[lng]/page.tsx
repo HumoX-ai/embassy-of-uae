@@ -110,16 +110,17 @@ export default async function Home({ params }: PageProps) {
               src: "/emblem_of_uzbekistan.svg",
               text:
                 validLng === "uz"
-                  ? "O'zbekiston Respublikasi Tashqi ishlar vazirligi"
-                  : "Ministry of Foreign Affairs of the Republic of Uzbekistan",
+                  ? "O'zbekiston Respublikasi Hukumat portali"
+                  : "Government Portal of the Republic of Uzbekistan",
               url: "https://gov.uz/uz",
             },
             {
               src: "/emblem_of_uzbekistan.svg",
               text:
                 validLng === "uz"
-                  ? "Milliy huquqiy internet portali"
-                  : "National Legal Internet Portal",
+                  ? "O'zbekiston Respublikasi Tashqi ishlar vazirligi"
+                  : "Ministry of Foreign Affairs of the Republic of Uzbekistan",
+              url: "https://gov.uz/oz/mfa",
             },
           ].map((item, index) => (
             <a
