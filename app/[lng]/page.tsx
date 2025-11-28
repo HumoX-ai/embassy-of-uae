@@ -83,28 +83,43 @@ export default async function Home({ params }: PageProps) {
           {[
             {
               src: "/emblem_of_uzbekistan.svg",
-              text: "O’zbekiston Respublikasi Prezidenti matbuot xizmati",
+              text:
+                validLng === "uz"
+                  ? "O'zbekiston Respublikasi Prezidenti matbuot xizmati"
+                  : "Press Service of the President of the Republic of Uzbekistan",
               url: "https://www.president.uz/uz",
             },
             {
               src: "/emblem_of_uzbekistan.svg",
-              text: "O'zbekiston Respublikasi Oliy Majlisining Senati",
+              text:
+                validLng === "uz"
+                  ? "O'zbekiston Respublikasi Oliy Majlisining Senati"
+                  : "Senate of the Oliy Majlis of the Republic of Uzbekistan",
               url: "https://senat.uz/",
             },
             {
               src: "/emblem_of_uzbekistan.svg",
-              text: "O’zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi",
+              text:
+                validLng === "uz"
+                  ? "O'zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi"
+                  : "Legislative Chamber of the Oliy Majlis of the Republic of Uzbekistan",
               url: "https://parliament.gov.uz/",
             },
 
             {
               src: "/emblem_of_uzbekistan.svg",
-              text: "O’zbekiston Respublikasi Hukumati portali",
+              text:
+                validLng === "uz"
+                  ? "O'zbekiston Respublikasi Tashqi ishlar vazirligi"
+                  : "Ministry of Foreign Affairs of the Republic of Uzbekistan",
               url: "https://gov.uz/uz",
             },
             {
               src: "/emblem_of_uzbekistan.svg",
-              text: "Milliy huquqiy internet portali",
+              text:
+                validLng === "uz"
+                  ? "Milliy huquqiy internet portali"
+                  : "National Legal Internet Portal",
             },
           ].map((item, index) => (
             <a
