@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 
 import NewsSection from "@/components/features/news/ui/NewsSection";
 import { useTranslation } from "@/i18n";
@@ -57,7 +58,7 @@ export default async function Home({ params }: PageProps) {
   const { t } = await useTranslation(validLng, "common");
 
   return (
-    <div className="min-h-screen">
+    <div className="">
       {/* Hero Section */}
       {/* <div className="bg-linear-to-br from-primary/5 via-background to-primary/10">
         <div className="container mx-auto px-4 py-16 md:py-24">
@@ -76,6 +77,58 @@ export default async function Home({ params }: PageProps) {
 
       {/* News Section */}
       <NewsSection lng={validLng} t={t} />
+
+      <section className="container mx-auto px-4 py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+          {[
+            {
+              src: "/emblem_of_uzbekistan.svg",
+              text: "O’zbekiston Respublikasi Prezidenti matbuot xizmati",
+              url: "https://www.president.uz/uz",
+            },
+            {
+              src: "/emblem_of_uzbekistan.svg",
+              text: "O'zbekiston Respublikasi Oliy Majlisining Senati",
+              url: "https://senat.uz/",
+            },
+            {
+              src: "/emblem_of_uzbekistan.svg",
+              text: "O’zbekiston Respublikasi Oliy Majlisi Qonunchilik palatasi",
+              url: "https://parliament.gov.uz/",
+            },
+
+            {
+              src: "/emblem_of_uzbekistan.svg",
+              text: "O’zbekiston Respublikasi Hukumati portali",
+              url: "https://gov.uz/uz",
+            },
+            {
+              src: "/emblem_of_uzbekistan.svg",
+              text: "Milliy huquqiy internet portali",
+            },
+          ].map((item, index) => (
+            <a
+              key={index}
+              className="flex flex-col items-center text-center space-y-4 group cursor-pointer"
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="relative w-24 h-24">
+                <Image
+                  src={item.src}
+                  alt={item.text}
+                  fill
+                  className="object-contain"
+                />
+              </div>
+              <p className="text-sm font-medium text-muted-foreground group-hover:text-primary transition-colors duration-300">
+                {item.text}
+              </p>
+            </a>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }
