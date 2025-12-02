@@ -50,6 +50,15 @@ export default function Footer({ lng }: FooterProps) {
                 </Link>
               </div>
               <div className="flex items-center">
+                <Phone className="w-5 h-5 mr-3 text-primary shrink-0" />
+                <Link
+                  href="tel:800828263674"
+                  className="text-sm hover:underline text-primary"
+                >
+                  VATANDOSH - 800 828263674
+                </Link>
+              </div>
+              <div className="flex items-center">
                 <Mail className="w-5 h-5 mr-3 text-primary shrink-0" />
                 <Link
                   href={`mailto:${t("email")}`}
