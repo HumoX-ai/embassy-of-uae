@@ -89,8 +89,7 @@ export const metadata: Metadata = {
     ],
   },
   verification: {
-    // Google Search Console verification kodini bu yerga qo'shing
-    // google: "your-google-verification-code",
+    google: "H2VV8GjS94fbyuKMN7EoRhUPVzQmKAXnGzW_ByBwDng",
   },
 };
 
