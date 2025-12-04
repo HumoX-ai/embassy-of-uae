@@ -75,6 +75,7 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/favicon.ico" },
       { url: "/emblem_of_uzbekistan.ico", sizes: "any" },
       { url: "/emblem_of_uzbekistan.png", sizes: "32x32", type: "image/png" },
       {
@@ -83,7 +84,7 @@ export const metadata: Metadata = {
         type: "image/png",
       },
     ],
-    shortcut: "/emblem_of_uzbekistan.ico",
+    shortcut: "/favicon.ico",
     apple: [
       { url: "/emblem_of_uzbekistan.png", sizes: "180x180", type: "image/png" },
     ],
