@@ -10,7 +10,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     "/ambassador-message",
     "/biometric-passport-issuance",
     "/birth-certificate-paternity",
-    "/contact",
     "/info-for-foreigners",
     "/national-holidays",
     "/news",
