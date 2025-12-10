@@ -15,7 +15,7 @@ export default function Footer({ lng }: FooterProps) {
   const { t } = useTranslation(lng, "footer");
 
   return (
-    <footer className="bg-[url('/bg.svg')] bg-contain bg-center bg-muted/30 border-t mt-auto">
+    <footer className="bg-[url('/bg.svg')] bg-contain bg-center bg-[#F4F3F2] border-t mt-auto z-20">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Embassy Info */}
