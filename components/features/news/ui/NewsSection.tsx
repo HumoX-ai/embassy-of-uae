@@ -27,7 +27,7 @@ export default async function NewsSection({ lng, t }: NewsSectionProps) {
   const otherNews = latestNews.slice(1, 4); // Next 3
 
   return (
-    <section className="py-6 md:py-12 bg-muted/30">
+    <section className="py-6 md:py-12">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="flex items-center justify-between mb-8">
