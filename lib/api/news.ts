@@ -1,6 +1,6 @@
 import { Article, ArticlesResponse } from "@/types/news";
 
-const API_BASE_URL =
+export const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL || "http://209.38.77.32:8090/api/v1";
 
 /**
