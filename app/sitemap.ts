@@ -43,7 +43,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const res = await fetch(`${API_BASE_URL}/article/all?size=200`);
     const json = await res.json();
     const news = json.content || [];
-    console.log(news);
 
     for (const lng of languages) {
       for (const post of news) {
