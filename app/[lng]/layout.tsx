@@ -26,7 +26,7 @@ export default async function LangLayout({
       <div className="absolute left-0 top-0 bottom-0 w-32 bg-[url('/pattern.png')] bg-repeat-y pointer-events-none z-0 hidden md:block"></div>
       {/* Right side pattern */}
       <div className="absolute right-0 top-0 bottom-0 w-32 bg-[url('/pattern.png')] bg-repeat-y pointer-events-none z-0 hidden md:block"></div>
-      <div className="relative z-100">
+      <div className="relative">
         <Header lng={validLng} />
         <main className="flex-1">{children}</main>
         <Footer lng={validLng} />
