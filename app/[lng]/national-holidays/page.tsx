@@ -44,6 +44,9 @@ export async function generateMetadata({
       title: titles[validLng] || titles.en,
       description: descriptions[validLng] || descriptions.en,
     },
+    alternates: {
+      canonical: `https://uzembassy.ae/${validLng}/national-holidays`,
+    },
   };
 }
 

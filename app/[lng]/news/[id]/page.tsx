@@ -78,6 +78,9 @@ export async function generateMetadata({
         description,
         images: news.image ? [news.image] : [],
       },
+      alternates: {
+        canonical: `https://uzembassy.ae/${validLng}/news/${id}`,
+      },
     };
   } catch (error) {
     console.error("Error generating metadata:", error);

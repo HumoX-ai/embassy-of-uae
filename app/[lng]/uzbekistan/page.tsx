@@ -61,6 +61,9 @@ export async function generateMetadata({
         "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Flag_of_Uzbekistan.svg/1200px-Flag_of_Uzbekistan.svg.png",
       ],
     },
+    alternates: {
+      canonical: `https://uzembassy.ae/${validLng}/uzbekistan`,
+    },
   };
 }
 

@@ -40,6 +40,9 @@ export async function generateMetadata({
       type: "website",
       locale: validLng === "uz" ? "uz_UZ" : "en_US",
     },
+    alternates: {
+      canonical: `https://uzembassy.ae/${validLng}/state-symbols`,
+    },
   };
 }
 

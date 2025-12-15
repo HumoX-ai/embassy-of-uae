@@ -65,6 +65,9 @@ export async function generateMetadata({
         "https://uzbekistan.org/wp-content/uploads/2023/05/oliy_mazhlis.jpg",
       ],
     },
+    alternates: {
+      canonical: `https://uzembassy.ae/${validLng}/parliament`,
+    },
   };
 }
 

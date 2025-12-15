@@ -56,6 +56,9 @@ export async function generateMetadata({
         "https://upload.wikimedia.org/wikipedia/commons/5/54/Shavkat_Mirziyoyev_official_portrait.jpg",
       ],
     },
+    alternates: {
+      canonical: `https://uzembassy.ae/${validLng}/president`,
+    },
   };
 }
 
