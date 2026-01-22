@@ -4,26 +4,25 @@ import type { NextRequest } from "next/server";
 import { languages, fallbackLng } from "./i18n/settings";
 
 export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
+  const { pathname } = request.nextUrl;
 
-  // Check if there is any supported locale in the pathname
-  const pathnameIsMissingLocale = languages.every(
-    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  // Agar allaqachon locale bor bo‘lsa — o‘tkazib yuboramiz
+  const hasLocale = languages.some(
+    (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`),
   );
 
-  // Redirect if there is no locale
-  if (pathnameIsMissingLocale) {
-    // Get the preferred language from the Accept-Language header or use fallback
-    const locale = fallbackLng;
-
-    // Redirect to URL with locale
-    return NextResponse.redirect(
-      new URL(`/${locale}${pathname === "/" ? "" : pathname}`, request.url)
-    );
+  if (hasLocale) {
+    return NextResponse.next();
   }
+
+  // Root yoki boshqa path — redirect
+  const locale = fallbackLng;
+
+  return NextResponse.redirect(
+    new URL(`/${locale}${pathname === "/" ? "" : pathname}`, request.url),
+  );
 }
 
 export const config = {
-  // Matcher ignoring `/_next/`, `/api/`, `/static`, and other internal paths
-  matcher: ["/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)"],
+  matcher: ["/((?!api|_next|favicon.ico|robots.txt|sitemap.xml|.*\\..*).*)"],
 };

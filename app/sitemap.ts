@@ -40,7 +40,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // NEWS ARTICLES
   try {
-    const res = await fetch(`${API_BASE_URL}/article/all?size=200`);
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 soniya timeout
+
+    const res = await fetch(`${API_BASE_URL}/article/all?size=200`, {
+      signal: controller.signal,
+    });
+
+    clearTimeout(timeoutId);
     const json = await res.json();
     const news = json.content || [];
 

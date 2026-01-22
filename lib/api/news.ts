@@ -11,19 +11,25 @@ export const API_BASE_URL =
  */
 export async function fetchArticles(
   page: number = 1,
-  size: number = 12
+  size: number = 12,
 ): Promise<ArticlesResponse> {
   try {
     // API uses 0-indexed pages, so we subtract 1
     const apiPage = page - 1;
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 soniya timeout
+
     const response = await fetch(
       `${API_BASE_URL}/article/all?page=${apiPage}&size=${size}`,
       {
         next: {
           revalidate: 300, // Revalidate every 5 minutes (300 seconds)
         },
-      }
+        signal: controller.signal,
+      },
     );
+
+    clearTimeout(timeoutId);
 
     if (!response.ok) {
       throw new Error(`Failed to fetch articles: ${response.statusText}`);
@@ -32,6 +38,10 @@ export async function fetchArticles(
     const data: ArticlesResponse = await response.json();
     return data;
   } catch (error) {
+    if (error instanceof Error && error.name === "AbortError") {
+      console.error("Request timed out after 10 seconds");
+      throw new Error("Request timed out");
+    }
     console.error("Error fetching articles:", error);
     throw error;
   }
@@ -44,11 +54,17 @@ export async function fetchArticles(
  */
 export async function fetchArticleById(id: number): Promise<Article> {
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000); // 10 soniya timeout
+
     const response = await fetch(`${API_BASE_URL}/article/${id}`, {
       next: {
         revalidate: 300, // Revalidate every 5 minutes
       },
+      signal: controller.signal,
     });
+
+    clearTimeout(timeoutId);
 
     if (!response.ok) {
       throw new Error(`Failed to fetch article: ${response.statusText}`);
@@ -57,6 +73,10 @@ export async function fetchArticleById(id: number): Promise<Article> {
     const data: Article = await response.json();
     return data;
   } catch (error) {
+    if (error instanceof Error && error.name === "AbortError") {
+      console.error(`Request timed out after 10 seconds for article ${id}`);
+      throw new Error("Request timed out");
+    }
     console.error(`Error fetching article ${id}:`, error);
     throw error;
   }
