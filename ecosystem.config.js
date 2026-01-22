@@ -3,21 +3,17 @@ module.exports = {
     {
       name: "next-app",
       script: "node_modules/next/dist/bin/next",
-      args: "start -p 3000",
-      instances: 1,
+      args: "start -H 0.0.0.0 -p 3000",
       exec_mode: "fork",
+      instances: 1,
 
-      out_file: "/dev/null",
-      error_file: "/dev/null",
-      log_file: "/dev/null",
-      merge_logs: false,
+      node_args: "--max-old-space-size=512",
 
-      env: {
-        NODE_ENV: "production",
-        NEXT_TELEMETRY_DISABLED: "1",
-        NODE_OPTIONS: "--max-old-space-size=256",
-        TMPDIR: "/dev/shm",
-      },
+      max_memory_restart: "400M",
+
+      out_file: "/var/log/pm2/next-out.log",
+      error_file: "/var/log/pm2/next-error.log",
+      log_date_format: "YYYY-MM-DD HH:mm:ss",
     },
   ],
 };
