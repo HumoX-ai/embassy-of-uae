@@ -27,8 +27,8 @@ module.exports = {
         PORT: 3000,
       },
 
-      out_file: "/var/log/pm2/next-out.log",
-      error_file: "/var/log/pm2/next-error.log",
+      out_file: "/home/app/.pm2/next-out.log",
+      error_file: "/home/app/.pm2/next-error.log",
       log_date_format: "YYYY-MM-DD HH:mm:ss",
       merge_logs: true,
     },
