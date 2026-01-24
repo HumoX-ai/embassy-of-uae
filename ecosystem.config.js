@@ -2,9 +2,9 @@ module.exports = {
   apps: [
     {
       name: "next-app",
-      script: "node_modules/next/dist/bin/next",
       args: "start -H 0.0.0.0 -p 3000",
-      cwd: "/var/www/your-project", // 🔴 project pathni moslashtir
+      script: ".next/standalone/server.js",
+      cwd: "/var/www/embassy-of-uae",
 
       exec_mode: "fork",
       instances: 1,
