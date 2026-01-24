@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -22,7 +23,10 @@ const nextConfig: NextConfig = {
   // Generate sitemap automatically
   experimental: {
     optimizePackageImports: ["lucide-react"],
+
+    ppr: false,
   },
+  output: "standalone",
   // Headers for security and SEO
   async headers() {
     return [
